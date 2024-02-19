@@ -1,0 +1,20 @@
+# my global config
+global:
+  scrape_interval:     15s # By default, scrape targets every 15 seconds.
+  evaluation_interval: 15s # By default, scrape targets every 15 seconds.
+
+  external_labels:
+    monitor: 'my-project'
+
+rule_files:
+
+scrape_configs:
+  # ...
+
+  - job_name: 'spring-boot-application'
+    scrape_interval: 5s
+    # 여기에서는 spring actuator가 활성화시키는 엔드포인트에서 데이터를 스크래핑한다.
+    metrics_path: "/actuator/prometheus"
+    static_configs:
+      # 자바 애플리케이션이 실행되는 IP:PORT
+      - targets: ["localhost:8888"]

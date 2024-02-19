@@ -1,0 +1,220 @@
+2024-01-19 12:36:02.180  INFO 18520 --- [main] kr.dbinc.ecos.OcppForJavaApplication     : Starting OcppForJavaApplication using Java 17.0.7 on DESKTOP-OBR6GFG with PID 18520 (D:\StsWorkspace\ecos-ocpp-server\bin\main started by Jerad in D:\StsWorkspace\ecos-ocpp-server)
+2024-01-19 12:36:02.186  INFO 18520 --- [main] kr.dbinc.ecos.OcppForJavaApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-01-19 12:36:03.700  INFO 18520 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-19 12:36:04.151  INFO 18520 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 437 ms. Found 23 JPA repository interfaces.
+2024-01-19 12:36:04.809  INFO 18520 --- [main] kr.dbinc.ecos.config.ConnectorConfig     : HTTP port setup to 9999
+2024-01-19 12:36:05.113  INFO 18520 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 5000 (https) 9999 (http)
+2024-01-19 12:36:05.138  INFO 18520 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-19 12:36:05.139  INFO 18520 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2024-01-19 12:36:05.378  INFO 18520 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-19 12:36:05.378  INFO 18520 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3102 ms
+2024-01-19 12:36:05.880  INFO 18520 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-19 12:36:06.025  INFO 18520 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2024-01-19 12:36:06.432  INFO 18520 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-01-19 12:36:06.671  INFO 18520 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-19 12:36:06.798  INFO 18520 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-19 12:36:06.820  INFO 18520 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2024-01-19 12:36:07.057  WARN 18520 --- [main] org.hibernate.cfg.AnnotationBinder       : HHH000457: Joined inheritance hierarchy [kr.dbinc.ecos.domain.member.Authorization] defined explicit @DiscriminatorColumn.  Legacy Hibernate behavior was to ignore the @DiscriminatorColumn.  However, as part of issue HHH-6911 we now apply the explicit @DiscriminatorColumn.  If you would prefer the legacy behavior, enable the `hibernate.discriminator.ignore_explicit_for_joined` setting (hibernate.discriminator.ignore_explicit_for_joined=true)
+2024-01-19 12:36:07.739  INFO 18520 --- [main] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: kr.dbinc.ecos.domain.security.SecurityLog (class must be instantiated by Interceptor)
+2024-01-19 12:36:07.955  INFO 18520 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-01-19 12:36:07.965  INFO 18520 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-19 12:36:09.612  INFO 18520 --- [main] org.reflections.Reflections              : Reflections took 306 ms to scan 1 urls, producing 70 keys and 404 values
+2024-01-19 12:36:09.841  INFO 18520 --- [main] org.reflections.Reflections              : Reflections took 206 ms to scan 1 urls, producing 70 keys and 404 values
+2024-01-19 12:36:10.047  INFO 18520 --- [main] org.reflections.Reflections              : Reflections took 204 ms to scan 1 urls, producing 70 keys and 404 values
+2024-01-19 12:36:10.160  INFO 18520 --- [main] kr.dbinc.ecos.config.SchedulerConfig     : datSource=HikariDataSource (HikariPool-1)
+2024-01-19 12:36:10.594  INFO 18520 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2024-01-19 12:36:11.812  INFO 18520 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-01-19 12:36:12.152  INFO 18520 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 5000 (https) 9999 (http) with context path ''
+2024-01-19 12:36:12.179  INFO 18520 --- [main] kr.dbinc.ecos.OcppForJavaApplication     : Started OcppForJavaApplication in 10.503 seconds (JVM running for 11.738)
+2024-01-19 12:36:14.185  INFO 18520 --- [RMI TCP Connection(1)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-19 12:36:14.187  INFO 18520 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-19 12:36:14.189  INFO 18520 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-01-19 12:46:01.376  INFO 5408 --- [main] kr.dbinc.ecos.OcppForJavaApplication     : Starting OcppForJavaApplication using Java 17.0.7 on DESKTOP-OBR6GFG with PID 5408 (D:\StsWorkspace\ecos-ocpp-server\bin\main started by Jerad in D:\StsWorkspace\ecos-ocpp-server)
+2024-01-19 12:46:01.381  INFO 5408 --- [main] kr.dbinc.ecos.OcppForJavaApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-01-19 12:46:02.970  INFO 5408 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-19 12:46:03.510  INFO 5408 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 531 ms. Found 23 JPA repository interfaces.
+2024-01-19 12:46:04.103  INFO 5408 --- [main] kr.dbinc.ecos.config.ConnectorConfig     : HTTP port setup to 9999
+2024-01-19 12:46:04.364  INFO 5408 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 5000 (https) 9999 (http)
+2024-01-19 12:46:04.379  INFO 5408 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-19 12:46:04.379  INFO 5408 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2024-01-19 12:46:04.555  INFO 5408 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-19 12:46:04.555  INFO 5408 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3103 ms
+2024-01-19 12:46:05.024  INFO 5408 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-19 12:46:05.100  INFO 5408 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2024-01-19 12:46:05.297  INFO 5408 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-01-19 12:46:05.451  INFO 5408 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-19 12:46:05.555  INFO 5408 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-19 12:46:05.574  INFO 5408 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2024-01-19 12:46:05.858  WARN 5408 --- [main] org.hibernate.cfg.AnnotationBinder       : HHH000457: Joined inheritance hierarchy [kr.dbinc.ecos.domain.member.Authorization] defined explicit @DiscriminatorColumn.  Legacy Hibernate behavior was to ignore the @DiscriminatorColumn.  However, as part of issue HHH-6911 we now apply the explicit @DiscriminatorColumn.  If you would prefer the legacy behavior, enable the `hibernate.discriminator.ignore_explicit_for_joined` setting (hibernate.discriminator.ignore_explicit_for_joined=true)
+2024-01-19 12:46:06.511  INFO 5408 --- [main] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: kr.dbinc.ecos.domain.security.SecurityLog (class must be instantiated by Interceptor)
+2024-01-19 12:46:06.698  INFO 5408 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-01-19 12:46:06.709  INFO 5408 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-19 12:46:08.271  INFO 5408 --- [main] org.reflections.Reflections              : Reflections took 269 ms to scan 1 urls, producing 70 keys and 404 values
+2024-01-19 12:46:08.465  INFO 5408 --- [main] org.reflections.Reflections              : Reflections took 173 ms to scan 1 urls, producing 70 keys and 404 values
+2024-01-19 12:46:08.644  INFO 5408 --- [main] org.reflections.Reflections              : Reflections took 177 ms to scan 1 urls, producing 70 keys and 404 values
+2024-01-19 12:46:08.729  INFO 5408 --- [main] kr.dbinc.ecos.config.SchedulerConfig     : datSource=HikariDataSource (HikariPool-1)
+2024-01-19 12:46:09.171  INFO 5408 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2024-01-19 12:46:10.505  INFO 5408 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-01-19 12:46:10.878  INFO 5408 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 5000 (https) 9999 (http) with context path ''
+2024-01-19 12:46:10.903  INFO 5408 --- [main] kr.dbinc.ecos.OcppForJavaApplication     : Started OcppForJavaApplication in 10.118 seconds (JVM running for 11.355)
+2024-01-19 12:46:12.988  INFO 5408 --- [RMI TCP Connection(1)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-19 12:46:12.988  INFO 5408 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-19 12:46:12.992  INFO 5408 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-01-19 12:47:09.786  INFO 5408 --- [https-jsse-nio-5000-exec-8] k.dbinc.ecos.config.SecurityInterceptor  : Connect Try Charger URI=https://127.0.0.1:5000/v2/BNS002101, findLevel=2
+2024-01-19 12:47:09.788  INFO 5408 --- [https-jsse-nio-5000-exec-8] k.d.ecos.ocpp.service.SecurityService    : username=BNS002101, password=bluenetworks, chargePointId=BNS002101
+2024-01-19 12:47:09.796  INFO 5408 --- [https-jsse-nio-5000-exec-8] k.d.ecos.ocpp.service.SecurityService    : requestPassword=bluenetworks, findPassword=bluenetworks
+2024-01-19 12:47:09.868  INFO 5408 --- [https-jsse-nio-5000-exec-8] k.d.e.w.h.AbstractWebSocketEndpoint      : [BNS002101] is Connected!
+2024-01-19 12:47:09.990  INFO 5408 --- [https-jsse-nio-5000-exec-8] k.d.ecos.ocpp.service.MessageLogService  : Charger id=BNS002101
+2024-01-19 12:47:10.054  INFO 5408 --- [https-jsse-nio-5000-exec-8] k.d.ecos.ocpp.service.MessageLogService  : Charger=BNS002101, Message=[2, "1", "BootNotification", { "chargeBoxSerialNumber": "02", "chargePointModel": "CEC-2303HC1", "chargePointSerialNumber": "F0:8B:FE:0F:00:00", "chargePointVendor": "kr.co.bluenetworks", "firmwareVersion": "V1.1.7" }]
+2024-01-19 12:47:10.229  INFO 5408 --- [https-jsse-nio-5000-exec-8] k.d.e.o.service.MessageForwardService    : chargerId =kr.co.bluenetworks
+2024-01-19 12:47:10.756  INFO 5408 --- [https-jsse-nio-5000-exec-8] k.d.e.o.service.MessageForwardService    : BootNotification result=ERROR
+2024-01-19 12:47:10.819 ERROR 5408 --- [https-jsse-nio-5000-exec-8] k.d.e.w.handler.Ocpp16WebSocketEndpoint  : Unrecognized token 'ERROR': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"ERROR"; line: 1, column: 6]
+
+kr.dbinc.ecos.ocpp.rpc.exception.InternalErrorException: Unrecognized token 'ERROR': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"ERROR"; line: 1, column: 6]
+	at kr.dbinc.ecos.ocpp.service.MessageForwardService.bootNotification(MessageForwardService.java:63) ~[main/:na]
+	at kr.dbinc.ecos.ocpp.profile.Ocpp16ServiceImpl.bootNotification(Ocpp16ServiceImpl.java:110) ~[main/:na]
+	at kr.dbinc.ecos.ocpp.profile.Ocpp16ServiceImpl$$FastClassBySpringCGLIB$$4fcff954.invoke(<generated>) ~[main/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793) ~[spring-aop-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763) ~[spring-aop-5.3.22.jar:5.3.22]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.22.jar:5.3.22]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.22.jar:5.3.22]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763) ~[spring-aop-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708) ~[spring-aop-5.3.22.jar:5.3.22]
+	at kr.dbinc.ecos.ocpp.profile.Ocpp16ServiceImpl$$EnhancerBySpringCGLIB$$f7affe5b.bootNotification(<generated>) ~[main/:na]
+	at kr.dbinc.ecos.ocpp.rpc.MessageHandlerImpl.dispatch(MessageHandlerImpl.java:80) ~[main/:na]
+	at kr.dbinc.ecos.ocpp.rpc.MessageHandlerImpl.handleMessage(MessageHandlerImpl.java:59) ~[main/:na]
+	at kr.dbinc.ecos.ws.handler.Ocpp16WebSocketEndpoint.handleTextMessage(Ocpp16WebSocketEndpoint.java:69) ~[main/:na]
+	at kr.dbinc.ecos.ws.handler.AbstractWebSocketEndpoint.onMessage(AbstractWebSocketEndpoint.java:28) ~[main/:na]
+	at kr.dbinc.ecos.ws.handler.ConcurrentWebSocketHandler.handleMessage(ConcurrentWebSocketHandler.java:31) ~[main/:na]
+	at org.springframework.web.socket.handler.WebSocketHandlerDecorator.handleMessage(WebSocketHandlerDecorator.java:75) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.handler.LoggingWebSocketHandlerDecorator.handleMessage(LoggingWebSocketHandlerDecorator.java:56) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.handler.ExceptionWebSocketHandlerDecorator.handleMessage(ExceptionWebSocketHandlerDecorator.java:58) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter.handleTextMessage(StandardWebSocketHandlerAdapter.java:114) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter.access$000(StandardWebSocketHandlerAdapter.java:43) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:85) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:82) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.apache.tomcat.websocket.WsFrameBase.sendMessageText(WsFrameBase.java:415) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsFrameServer.sendMessageText(WsFrameServer.java:129) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.WsFrameBase.processDataText(WsFrameBase.java:515) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.WsFrameBase.processData(WsFrameBase.java:301) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:133) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsFrameServer.onDataAvailable(WsFrameServer.java:85) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsFrameServer.doOnDataAvailable(WsFrameServer.java:183) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsFrameServer.notifyDataAvailable(WsFrameServer.java:162) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.upgradeDispatch(WsHttpUpgradeHandler.java:157) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.coyote.http11.upgrade.UpgradeProcessorInternal.dispatch(UpgradeProcessorInternal.java:60) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:59) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+Caused by: com.fasterxml.jackson.core.JsonParseException: Unrecognized token 'ERROR': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"ERROR"; line: 1, column: 6]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2391) ~[jackson-core-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:745) ~[jackson-core-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._reportInvalidToken(ReaderBasedJsonParser.java:2961) ~[jackson-core-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:2002) ~[jackson-core-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:802) ~[jackson-core-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:4761) ~[jackson-databind-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4667) ~[jackson-databind-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3629) ~[jackson-databind-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3597) ~[jackson-databind-2.13.3.jar:2.13.3]
+	at kr.dbinc.ecos.ocpp.service.MessageForwardService.bootNotification(MessageForwardService.java:61) ~[main/:na]
+	... 43 common frames omitted
+
+2024-01-19 12:47:10.839  INFO 5408 --- [https-jsse-nio-5000-exec-8] k.d.ecos.ocpp.service.MessageLogService  : Charger id=BNS002101
+2024-01-19 12:47:10.852  INFO 5408 --- [https-jsse-nio-5000-exec-8] k.d.ecos.ocpp.service.MessageLogService  : Charger=BNS002101, Message=[4," 1","InternalError","Unrecognized token 'ERROR': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')\n at [Source: (String)\"ERROR\"; line: 1, column: 6]","{}"]
+2024-01-19 12:47:55.601  INFO 5408 --- [https-jsse-nio-5000-exec-6] k.d.e.w.h.AbstractWebSocketEndpoint      : [BNS002101] is Disconnected!
+2024-01-19 12:47:55.608  INFO 5408 --- [https-jsse-nio-5000-exec-6] k.d.e.w.h.AbstractWebSocketEndpoint      : [BNS002101] is Disconnected!
+2024-01-19 15:48:54.153  INFO 5408 --- [https-jsse-nio-5000-exec-2] k.dbinc.ecos.config.SecurityInterceptor  : Charger is rejected URI=https://127.0.0.1:5000/v2/BNS004001, findLevel=null
+2024-01-19 15:50:02.868  INFO 17224 --- [main] kr.dbinc.ecos.OcppForJavaApplication     : Starting OcppForJavaApplication using Java 17.0.7 on DESKTOP-OBR6GFG with PID 17224 (D:\StsWorkspace\ecos-ocpp-server\bin\main started by Jerad in D:\StsWorkspace\ecos-ocpp-server)
+2024-01-19 15:50:02.871  INFO 17224 --- [main] kr.dbinc.ecos.OcppForJavaApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-01-19 15:50:04.172  INFO 17224 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-19 15:50:04.624  INFO 17224 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 436 ms. Found 23 JPA repository interfaces.
+2024-01-19 15:50:05.230  INFO 17224 --- [main] kr.dbinc.ecos.config.ConnectorConfig     : HTTP port setup to 9999
+2024-01-19 15:50:05.602  INFO 17224 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 5000 (https) 9999 (http)
+2024-01-19 15:50:05.630  INFO 17224 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-19 15:50:05.631  INFO 17224 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2024-01-19 15:50:05.907  INFO 17224 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-19 15:50:05.907  INFO 17224 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2939 ms
+2024-01-19 15:50:06.428  INFO 17224 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-19 15:50:06.513  INFO 17224 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2024-01-19 15:50:06.769  INFO 17224 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-01-19 15:50:06.931  INFO 17224 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-19 15:50:07.052  INFO 17224 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-19 15:50:07.072  INFO 17224 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2024-01-19 15:50:07.391  WARN 17224 --- [main] org.hibernate.cfg.AnnotationBinder       : HHH000457: Joined inheritance hierarchy [kr.dbinc.ecos.domain.member.Authorization] defined explicit @DiscriminatorColumn.  Legacy Hibernate behavior was to ignore the @DiscriminatorColumn.  However, as part of issue HHH-6911 we now apply the explicit @DiscriminatorColumn.  If you would prefer the legacy behavior, enable the `hibernate.discriminator.ignore_explicit_for_joined` setting (hibernate.discriminator.ignore_explicit_for_joined=true)
+2024-01-19 15:50:08.031  INFO 17224 --- [main] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: kr.dbinc.ecos.domain.security.SecurityLog (class must be instantiated by Interceptor)
+2024-01-19 15:50:08.214  INFO 17224 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-01-19 15:50:08.228  INFO 17224 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-19 15:50:09.967  INFO 17224 --- [main] org.reflections.Reflections              : Reflections took 255 ms to scan 1 urls, producing 70 keys and 404 values
+2024-01-19 15:50:10.165  INFO 17224 --- [main] org.reflections.Reflections              : Reflections took 167 ms to scan 1 urls, producing 70 keys and 404 values
+2024-01-19 15:50:10.345  INFO 17224 --- [main] org.reflections.Reflections              : Reflections took 177 ms to scan 1 urls, producing 70 keys and 404 values
+2024-01-19 15:50:10.440  INFO 17224 --- [main] kr.dbinc.ecos.config.SchedulerConfig     : datSource=HikariDataSource (HikariPool-1)
+2024-01-19 15:50:10.849  INFO 17224 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2024-01-19 15:50:12.154  INFO 17224 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-01-19 15:50:12.635  INFO 17224 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 5000 (https) 9999 (http) with context path ''
+2024-01-19 15:50:12.661  INFO 17224 --- [main] kr.dbinc.ecos.OcppForJavaApplication     : Started OcppForJavaApplication in 10.294 seconds (JVM running for 11.473)
+2024-01-19 15:52:00.587  INFO 17224 --- [https-jsse-nio-5000-exec-6] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-19 15:52:00.588  INFO 17224 --- [https-jsse-nio-5000-exec-6] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-19 15:52:00.590  INFO 17224 --- [https-jsse-nio-5000-exec-6] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-01-19 15:52:00.784  INFO 17224 --- [https-jsse-nio-5000-exec-6] k.dbinc.ecos.config.SecurityInterceptor  : Charger is rejected URI=https://127.0.0.1:5000/v2/BNS004001, findLevel=null
+2024-01-19 15:53:31.808  INFO 17224 --- [https-jsse-nio-5000-exec-3] k.dbinc.ecos.config.SecurityInterceptor  : Connect Try Charger URI=https://127.0.0.1:5000/v2/BNS004001, findLevel=2
+2024-01-19 15:53:31.810  INFO 17224 --- [https-jsse-nio-5000-exec-3] k.d.ecos.ocpp.service.SecurityService    : username=BNS004001, password=bluenetworks, chargePointId=BNS004001
+2024-01-19 15:53:31.817  INFO 17224 --- [https-jsse-nio-5000-exec-3] k.d.ecos.ocpp.service.SecurityService    : requestPassword=bluenetworks, findPassword=bluenetworks
+2024-01-19 15:53:31.874  INFO 17224 --- [https-jsse-nio-5000-exec-3] k.d.e.w.h.AbstractWebSocketEndpoint      : [BNS004001] is Connected!
+2024-01-19 15:53:32.003  INFO 17224 --- [https-jsse-nio-5000-exec-3] k.d.ecos.ocpp.service.MessageLogService  : Charger id=BNS004001
+2024-01-19 15:53:32.059  INFO 17224 --- [https-jsse-nio-5000-exec-3] k.d.ecos.ocpp.service.MessageLogService  : Charger=BNS004001, Message=[2, "1", "BootNotification", { "chargeBoxSerialNumber": "02", "chargePointModel": "CEC-2303HC1", "chargePointSerialNumber": "F0:8B:FE:0F:00:00", "chargePointVendor": "kr.co.bluenetworks", "firmwareVersion": "V1.1.7" }]
+2024-01-19 15:53:32.207  INFO 17224 --- [https-jsse-nio-5000-exec-3] k.d.e.o.service.MessageForwardService    : chargerId =kr.co.bluenetworks
+2024-01-19 15:53:33.449  INFO 17224 --- [https-jsse-nio-5000-exec-3] k.d.e.o.service.MessageForwardService    : BootNotification result={"currentTime":"2024-01-19T06:53:32.945+00:00","interval":120,"status":"Accepted"}
+2024-01-19 15:53:33.541  INFO 17224 --- [https-jsse-nio-5000-exec-3] k.d.ecos.ocpp.service.MessageLogService  : Charger id=BNS004001
+2024-01-19 15:53:33.553  INFO 17224 --- [https-jsse-nio-5000-exec-3] k.d.ecos.ocpp.service.MessageLogService  : Charger=BNS004001, Message=[3,"1",{"currentTime":"2024-01-19T06:53:32.945Z","interval":120,"status":"Accepted"}]
+2024-01-19 15:55:54.447  INFO 17224 --- [https-jsse-nio-5000-exec-4] k.d.e.w.h.AbstractWebSocketEndpoint      : [BNS004001] is Disconnected!
+2024-01-19 15:55:54.450  INFO 17224 --- [https-jsse-nio-5000-exec-4] k.d.e.w.h.AbstractWebSocketEndpoint      : [BNS004001] is Disconnected!
+2024-01-19 15:55:54.490  INFO 17224 --- [https-jsse-nio-5000-exec-1] k.dbinc.ecos.config.SecurityInterceptor  : Connect Try Charger URI=https://127.0.0.1:5000/v2/BNS004001, findLevel=2
+2024-01-19 15:55:54.491  INFO 17224 --- [https-jsse-nio-5000-exec-1] k.d.ecos.ocpp.service.SecurityService    : username=BNS004001, password=bluenetworks, chargePointId=BNS004001
+2024-01-19 15:55:54.498  INFO 17224 --- [https-jsse-nio-5000-exec-1] k.d.ecos.ocpp.service.SecurityService    : requestPassword=bluenetworks, findPassword=bluenetworks
+2024-01-19 15:55:54.499  INFO 17224 --- [https-jsse-nio-5000-exec-1] k.d.e.w.h.AbstractWebSocketEndpoint      : [BNS004001] is Connected!
+2024-01-19 15:55:54.500  INFO 17224 --- [https-jsse-nio-5000-exec-4] kr.dbinc.ecos.session.ChargePointStore   : 세션 아이디가 일치하지 않습니다. prev=9699f0e9-2f21-df3a-0816-24a520304427, cur =dea33b12-8d7a-c7e3-d11a-938669b52e76
+2024-01-19 15:55:54.549  INFO 17224 --- [https-jsse-nio-5000-exec-1] k.d.ecos.ocpp.service.MessageLogService  : Charger id=BNS004001
+2024-01-19 15:55:54.559  INFO 17224 --- [https-jsse-nio-5000-exec-1] k.d.ecos.ocpp.service.MessageLogService  : Charger=BNS004001, Message=[2, "1", "BootNotification", { "chargeBoxSerialNumber": "02", "chargePointModel": "CEC-2303HC1", "chargePointSerialNumber": "F0:8B:FE:0F:00:00", "chargePointVendor": "kr.co.bluenetworks", "firmwareVersion": "V1.1.7" }]
+2024-01-19 15:55:54.584  INFO 17224 --- [https-jsse-nio-5000-exec-1] k.d.e.o.service.MessageForwardService    : chargerId =kr.co.bluenetworks
+2024-01-19 15:55:54.642  INFO 17224 --- [https-jsse-nio-5000-exec-1] k.d.e.o.service.MessageForwardService    : BootNotification result={"currentTime":"2024-01-19T06:55:54.600+00:00","interval":120,"status":"Accepted"}
+2024-01-19 15:55:54.690  INFO 17224 --- [https-jsse-nio-5000-exec-1] k.d.ecos.ocpp.service.MessageLogService  : Charger id=BNS004001
+2024-01-19 15:55:54.701  INFO 17224 --- [https-jsse-nio-5000-exec-1] k.d.ecos.ocpp.service.MessageLogService  : Charger=BNS004001, Message=[3,"1",{"currentTime":"2024-01-19T06:55:54.6Z","interval":120,"status":"Accepted"}]
+2024-01-19 16:09:52.757  INFO 17224 --- [https-jsse-nio-5000-exec-2] k.d.e.w.h.AbstractWebSocketEndpoint      : [BNS004001] is Disconnected!
+2024-01-19 16:09:52.763  INFO 17224 --- [https-jsse-nio-5000-exec-2] k.d.e.w.h.AbstractWebSocketEndpoint      : [BNS004001] is Disconnected!
+2024-01-19 16:09:52.794  INFO 17224 --- [https-jsse-nio-5000-exec-10] k.dbinc.ecos.config.SecurityInterceptor  : Connect Try Charger URI=https://127.0.0.1:5000/v2/BNS004001, findLevel=2
+2024-01-19 16:09:52.796  INFO 17224 --- [https-jsse-nio-5000-exec-10] k.d.ecos.ocpp.service.SecurityService    : username=BNS004001, password=bluenetworks, chargePointId=BNS004001
+2024-01-19 16:09:52.802  INFO 17224 --- [https-jsse-nio-5000-exec-10] k.d.ecos.ocpp.service.SecurityService    : requestPassword=bluenetworks, findPassword=bluenetworks
+2024-01-19 16:09:52.804  INFO 17224 --- [https-jsse-nio-5000-exec-10] k.d.e.w.h.AbstractWebSocketEndpoint      : [BNS004001] is Connected!
+2024-01-19 16:09:52.806  INFO 17224 --- [https-jsse-nio-5000-exec-2] kr.dbinc.ecos.session.ChargePointStore   : 세션 아이디가 일치하지 않습니다. prev=e39489fc-2d3f-22e0-d4a1-335a074b9a86, cur =9699f0e9-2f21-df3a-0816-24a520304427
+2024-01-19 16:09:52.849  INFO 17224 --- [https-jsse-nio-5000-exec-10] k.d.ecos.ocpp.service.MessageLogService  : Charger id=BNS004001
+2024-01-19 16:09:52.865  INFO 17224 --- [https-jsse-nio-5000-exec-10] k.d.ecos.ocpp.service.MessageLogService  : Charger=BNS004001, Message=[2, "1", "BootNotification", { "chargeBoxSerialNumber": "02", "chargePointModel": "CEC-2303HC1", "chargePointSerialNumber": "F0:8B:FE:0F:00:00", "chargePointVendor": "kr.co.bluenetworks", "firmwareVersion": "V1.1.7" }]
+2024-01-19 16:09:52.895  INFO 17224 --- [https-jsse-nio-5000-exec-10] k.d.e.o.service.MessageForwardService    : chargerId =kr.co.bluenetworks
+2024-01-19 16:09:52.967  INFO 17224 --- [https-jsse-nio-5000-exec-10] k.d.e.o.service.MessageForwardService    : BootNotification result={"currentTime":"2024-01-19T07:09:52.908+00:00","interval":120,"status":"Accepted"}
+2024-01-19 16:09:53.002  INFO 17224 --- [https-jsse-nio-5000-exec-10] k.d.ecos.ocpp.service.MessageLogService  : Charger id=BNS004001
+2024-01-19 16:09:53.013  INFO 17224 --- [https-jsse-nio-5000-exec-10] k.d.ecos.ocpp.service.MessageLogService  : Charger=BNS004001, Message=[3,"1",{"currentTime":"2024-01-19T07:09:52.908Z","interval":120,"status":"Accepted"}]
+2024-01-19 16:14:41.719  INFO 17224 --- [https-jsse-nio-5000-exec-9] k.d.e.w.h.AbstractWebSocketEndpoint      : [BNS004001] is Disconnected!
+2024-01-19 16:14:41.720  INFO 17224 --- [https-jsse-nio-5000-exec-9] k.d.e.w.h.AbstractWebSocketEndpoint      : [BNS004001] is Disconnected!
+2024-01-19 16:15:16.486  INFO 17224 --- [https-jsse-nio-5000-exec-7] k.dbinc.ecos.config.SecurityInterceptor  : Connect Try Charger URI=https://127.0.0.1:5000/v2/BNS004001, findLevel=2
+2024-01-19 16:15:16.486  INFO 17224 --- [https-jsse-nio-5000-exec-7] k.d.ecos.ocpp.service.SecurityService    : username=BNS004001, password=bluenetworks, chargePointId=BNS004001
+2024-01-19 16:15:16.491  INFO 17224 --- [https-jsse-nio-5000-exec-7] k.d.ecos.ocpp.service.SecurityService    : requestPassword=bluenetworks, findPassword=bluenetworks
+2024-01-19 16:15:16.493  INFO 17224 --- [https-jsse-nio-5000-exec-7] k.d.e.w.h.AbstractWebSocketEndpoint      : [BNS004001] is Connected!
+2024-01-19 16:15:16.541  INFO 17224 --- [https-jsse-nio-5000-exec-7] k.d.ecos.ocpp.service.MessageLogService  : Charger id=BNS004001
+2024-01-19 16:15:16.552  INFO 17224 --- [https-jsse-nio-5000-exec-7] k.d.ecos.ocpp.service.MessageLogService  : Charger=BNS004001, Message=[2, "1", "BootNotification", { "chargeBoxSerialNumber": "02", "chargePointModel": "CEC-2303HC1", "chargePointSerialNumber": "F0:8B:FE:0F:00:00", "chargePointVendor": "kr.co.bluenetworks", "firmwareVersion": "V1.1.7" }]
+2024-01-19 16:15:16.576  INFO 17224 --- [https-jsse-nio-5000-exec-7] k.d.e.o.service.MessageForwardService    : chargerId =kr.co.bluenetworks
+2024-01-19 16:15:16.626  INFO 17224 --- [https-jsse-nio-5000-exec-7] k.d.e.o.service.MessageForwardService    : BootNotification result={"currentTime":"2024-01-19T07:15:16.590+00:00","interval":120,"status":"Accepted"}
+2024-01-19 16:15:16.658  INFO 17224 --- [https-jsse-nio-5000-exec-7] k.d.ecos.ocpp.service.MessageLogService  : Charger id=BNS004001
+2024-01-19 16:15:16.670  INFO 17224 --- [https-jsse-nio-5000-exec-7] k.d.ecos.ocpp.service.MessageLogService  : Charger=BNS004001, Message=[3,"1",{"currentTime":"2024-01-19T07:15:16.59Z","interval":120,"status":"Accepted"}]
+2024-01-19 16:25:42.219  INFO 17224 --- [https-jsse-nio-5000-exec-6] k.d.e.w.h.AbstractWebSocketEndpoint      : [BNS004001] is Disconnected!
+2024-01-19 16:25:42.220  INFO 17224 --- [https-jsse-nio-5000-exec-6] k.d.e.w.h.AbstractWebSocketEndpoint      : [BNS004001] is Disconnected!

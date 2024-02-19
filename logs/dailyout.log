@@ -1,0 +1,33 @@
+2024-02-19 17:25:40.061  INFO 17076 --- [main] kr.dbinc.evon.OcppForJavaApplication     : Starting OcppForJavaApplication using Java 1.8.0_202 on DESKTOP-OBR6GFG with PID 17076 (C:\Users\Jerad\git\evonOcpp\bin\main started by Jerad in C:\Users\Jerad\git\evonOcpp)
+2024-02-19 17:25:40.067  INFO 17076 --- [main] kr.dbinc.evon.OcppForJavaApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-02-19 17:25:41.767  INFO 17076 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-19 17:25:42.398  INFO 17076 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 619 ms. Found 23 JPA repository interfaces.
+2024-02-19 17:25:43.380  INFO 17076 --- [main] kr.dbinc.evon.config.ConnectorConfig     : HTTP port setup to 9999
+2024-02-19 17:25:43.708  INFO 17076 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 5000 (https) 9999 (http)
+2024-02-19 17:25:43.731  INFO 17076 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-19 17:25:43.731  INFO 17076 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2024-02-19 17:25:43.886  INFO 17076 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-19 17:25:43.886  INFO 17076 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3705 ms
+2024-02-19 17:25:44.586  INFO 17076 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-19 17:25:44.705  INFO 17076 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2024-02-19 17:25:45.089  INFO 17076 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-02-19 17:25:45.294  INFO 17076 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-02-19 17:25:45.431  INFO 17076 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-02-19 17:25:45.454  INFO 17076 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2024-02-19 17:25:45.730  WARN 17076 --- [main] org.hibernate.cfg.AnnotationBinder       : HHH000457: Joined inheritance hierarchy [kr.dbinc.evon.domain.member.Authorization] defined explicit @DiscriminatorColumn.  Legacy Hibernate behavior was to ignore the @DiscriminatorColumn.  However, as part of issue HHH-6911 we now apply the explicit @DiscriminatorColumn.  If you would prefer the legacy behavior, enable the `hibernate.discriminator.ignore_explicit_for_joined` setting (hibernate.discriminator.ignore_explicit_for_joined=true)
+2024-02-19 17:25:46.069  INFO 17076 --- [main] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: kr.dbinc.evon.domain.security.SecurityLog (class must be instantiated by Interceptor)
+2024-02-19 17:25:47.048  INFO 17076 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-02-19 17:25:47.068  INFO 17076 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-19 17:25:49.240  INFO 17076 --- [main] org.reflections.Reflections              : Reflections took 4 ms to scan 0 urls, producing 0 keys and 0 values
+2024-02-19 17:25:49.250  INFO 17076 --- [main] org.reflections.Reflections              : Reflections took 0 ms to scan 0 urls, producing 0 keys and 0 values
+2024-02-19 17:25:49.251  INFO 17076 --- [main] org.reflections.Reflections              : Reflections took 0 ms to scan 0 urls, producing 0 keys and 0 values
+2024-02-19 17:25:49.397  INFO 17076 --- [main] kr.dbinc.evon.config.SchedulerConfig     : datSource=HikariDataSource (HikariPool-1)
+2024-02-19 17:25:50.249  INFO 17076 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2024-02-19 17:25:51.694  INFO 17076 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-02-19 17:25:52.864  INFO 17076 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 5000 (https) 9999 (http) with context path ''
+2024-02-19 17:25:52.901  INFO 17076 --- [Task-scheduler1] k.d.e.s.ClearTimeOutSessionScheduler     : ClearTimeOutSessionScheduler start#######
+2024-02-19 17:25:52.903  INFO 17076 --- [Task-scheduler1] k.d.e.s.ClearTimeOutSessionScheduler     : ClearTimeOutSessionScheduler end#######
+2024-02-19 17:25:52.902  INFO 17076 --- [main] kr.dbinc.evon.OcppForJavaApplication     : Started OcppForJavaApplication in 13.554 seconds (JVM running for 14.419)
+2024-02-19 17:25:53.234  INFO 17076 --- [RMI TCP Connection(1)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-19 17:25:53.236  INFO 17076 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-19 17:25:53.237  INFO 17076 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms

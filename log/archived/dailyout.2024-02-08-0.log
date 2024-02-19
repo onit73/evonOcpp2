@@ -1,0 +1,321 @@
+2024-02-08 09:23:25.011  INFO 11532 --- [main] kr.dbinc.ecos.OcppForJavaApplication     : Starting OcppForJavaApplication using Java 17.0.7 on DESKTOP-OBR6GFG with PID 11532 (D:\StsWorkspace\ecos-ocpp-server\bin\main started by Jerad in D:\StsWorkspace\ecos-ocpp-server)
+2024-02-08 09:23:25.018  INFO 11532 --- [main] kr.dbinc.ecos.OcppForJavaApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-02-08 09:23:26.712  INFO 11532 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-08 09:23:27.063  INFO 11532 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 341 ms. Found 23 JPA repository interfaces.
+2024-02-08 09:23:27.538  INFO 11532 --- [main] kr.dbinc.ecos.config.ConnectorConfig     : HTTP port setup to 9999
+2024-02-08 09:23:27.735  INFO 11532 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 5000 (https) 9999 (http)
+2024-02-08 09:23:27.748  INFO 11532 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-08 09:23:27.748  INFO 11532 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2024-02-08 09:23:27.911  INFO 11532 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-08 09:23:27.911  INFO 11532 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2818 ms
+2024-02-08 09:23:28.334  INFO 11532 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-08 09:23:28.399  INFO 11532 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2024-02-08 09:23:28.589  INFO 11532 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-02-08 09:23:28.697  INFO 11532 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-02-08 09:23:28.796  INFO 11532 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-02-08 09:23:28.813  INFO 11532 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2024-02-08 09:23:29.034  WARN 11532 --- [main] org.hibernate.cfg.AnnotationBinder       : HHH000457: Joined inheritance hierarchy [kr.dbinc.ecos.domain.member.Authorization] defined explicit @DiscriminatorColumn.  Legacy Hibernate behavior was to ignore the @DiscriminatorColumn.  However, as part of issue HHH-6911 we now apply the explicit @DiscriminatorColumn.  If you would prefer the legacy behavior, enable the `hibernate.discriminator.ignore_explicit_for_joined` setting (hibernate.discriminator.ignore_explicit_for_joined=true)
+2024-02-08 09:23:29.642  INFO 11532 --- [main] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: kr.dbinc.ecos.domain.security.SecurityLog (class must be instantiated by Interceptor)
+2024-02-08 09:23:29.815  INFO 11532 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-02-08 09:23:29.827  INFO 11532 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-08 09:23:31.302  INFO 11532 --- [main] org.reflections.Reflections              : Reflections took 264 ms to scan 1 urls, producing 70 keys and 406 values
+2024-02-08 09:23:31.552  INFO 11532 --- [main] org.reflections.Reflections              : Reflections took 223 ms to scan 1 urls, producing 70 keys and 406 values
+2024-02-08 09:23:31.747  INFO 11532 --- [main] org.reflections.Reflections              : Reflections took 192 ms to scan 1 urls, producing 70 keys and 406 values
+2024-02-08 09:23:31.828  INFO 11532 --- [main] kr.dbinc.ecos.config.SchedulerConfig     : datSource=HikariDataSource (HikariPool-1)
+2024-02-08 09:23:32.198  INFO 11532 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2024-02-08 09:23:33.189  INFO 11532 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-02-08 09:23:33.570  INFO 11532 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 5000 (https) 9999 (http) with context path ''
+2024-02-08 09:23:33.585  INFO 11532 --- [main] kr.dbinc.ecos.OcppForJavaApplication     : Started OcppForJavaApplication in 9.026 seconds (JVM running for 9.845)
+2024-02-08 09:23:34.349  INFO 11532 --- [RMI TCP Connection(1)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-08 09:23:34.349  INFO 11532 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-08 09:23:34.351  INFO 11532 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-02-08 09:25:14.171  INFO 11532 --- [https-jsse-nio-5000-exec-6] k.dbinc.ecos.config.SecurityInterceptor  : Connect Try Charger URI=https://127.0.0.1:5000/v2/BNS006801, findLevel=2
+2024-02-08 09:25:14.173  INFO 11532 --- [https-jsse-nio-5000-exec-6] k.d.ecos.ocpp.service.SecurityService    : username=BNS006801, password=bluenetworks, chargePointId=BNS006801
+2024-02-08 09:25:14.194  INFO 11532 --- [https-jsse-nio-5000-exec-6] k.d.ecos.ocpp.service.SecurityService    : requestPassword=bluenetworks, findPassword=bluenetworks
+2024-02-08 09:25:14.292 ERROR 11532 --- [https-jsse-nio-5000-exec-6] w.s.h.ExceptionWebSocketHandlerDecorator : Closing session due to exception for StandardWebSocketSession[id=f7893209-8844-8139-8fa5-d8cb1093bba0, uri=wss://127.0.0.1:5000/v2/BNS006801]
+
+java.lang.NullPointerException: Cannot invoke "kr.dbinc.ecos.session.ChargePointStore.getAllChargePoint()" because "kr.dbinc.ecos.ws.handler.ConcurrentWebSocketHandler.chargePointStore" is null
+	at kr.dbinc.ecos.ws.handler.ConcurrentWebSocketHandler.afterConnectionEstablished(ConcurrentWebSocketHandler.java:32) ~[main/:na]
+	at org.springframework.web.socket.handler.WebSocketHandlerDecorator.afterConnectionEstablished(WebSocketHandlerDecorator.java:70) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.handler.LoggingWebSocketHandlerDecorator.afterConnectionEstablished(LoggingWebSocketHandlerDecorator.java:48) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.handler.ExceptionWebSocketHandlerDecorator.afterConnectionEstablished(ExceptionWebSocketHandlerDecorator.java:48) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter.onOpen(StandardWebSocketHandlerAdapter.java:104) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.init(WsHttpUpgradeHandler.java:136) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:933) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2024-02-08 09:25:14.299  WARN 11532 --- [https-jsse-nio-5000-exec-6] w.s.h.ExceptionWebSocketHandlerDecorator : Unhandled exception after connection closed for ExceptionWebSocketHandlerDecorator [delegate=LoggingWebSocketHandlerDecorator [delegate=kr.dbinc.ecos.ws.handler.Ocpp16WebSocketEndpoint@6c8f5262]]
+
+java.lang.NullPointerException: Cannot invoke "org.springframework.web.socket.WebSocketSession.getUri()" because "session" is null
+	at kr.dbinc.ecos.ws.handler.AbstractWebSocketEndpoint.onClose(AbstractWebSocketEndpoint.java:57) ~[main/:na]
+	at kr.dbinc.ecos.ws.handler.ConcurrentWebSocketHandler.afterConnectionClosed(ConcurrentWebSocketHandler.java:64) ~[main/:na]
+	at org.springframework.web.socket.handler.WebSocketHandlerDecorator.afterConnectionClosed(WebSocketHandlerDecorator.java:85) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.handler.LoggingWebSocketHandlerDecorator.afterConnectionClosed(LoggingWebSocketHandlerDecorator.java:72) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.handler.ExceptionWebSocketHandlerDecorator.afterConnectionClosed(ExceptionWebSocketHandlerDecorator.java:78) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter.onClose(StandardWebSocketHandlerAdapter.java:145) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.apache.tomcat.websocket.WsSession.fireEndpointOnClose(WsSession.java:767) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.WsSession.doClose(WsSession.java:715) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.WsSession.doClose(WsSession.java:665) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.WsSession.close(WsSession.java:652) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketSession.closeInternal(StandardWebSocketSession.java:235) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.adapter.AbstractWebSocketSession.close(AbstractWebSocketSession.java:142) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.handler.ExceptionWebSocketHandlerDecorator.tryCloseWithError(ExceptionWebSocketHandlerDecorator.java:94) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.handler.ExceptionWebSocketHandlerDecorator.afterConnectionEstablished(ExceptionWebSocketHandlerDecorator.java:51) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter.onOpen(StandardWebSocketHandlerAdapter.java:104) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.init(WsHttpUpgradeHandler.java:136) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:933) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2024-02-08 09:25:14.466  INFO 11532 --- [https-jsse-nio-5000-exec-6] k.d.ecos.ocpp.service.MessageLogService  : Charger=BNS006801, Message=[2, "1", "BootNotification", { "chargeBoxSerialNumber": "02", "chargePointModel": "CEC-2303HC1", "chargePointSerialNumber": "F0:8B:FE:0F:00:00", "chargePointVendor": "kr.co.bluenetworks", "firmwareVersion": "V1.1.7" }]
+2024-02-08 09:25:14.557 ERROR 11532 --- [https-jsse-nio-5000-exec-6] k.d.e.w.handler.Ocpp16WebSocketEndpoint  : Cannot invoke "kr.dbinc.ecos.session.ChargePoint.heartbeat()" because "chargePoint" is null
+
+java.lang.NullPointerException: Cannot invoke "kr.dbinc.ecos.session.ChargePoint.heartbeat()" because "chargePoint" is null
+	at kr.dbinc.ecos.ocpp.rpc.MessageHandlerImpl.dispatch(MessageHandlerImpl.java:74) ~[main/:na]
+	at kr.dbinc.ecos.ocpp.rpc.MessageHandlerImpl.handleMessage(MessageHandlerImpl.java:59) ~[main/:na]
+	at kr.dbinc.ecos.ws.handler.Ocpp16WebSocketEndpoint.handleTextMessage(Ocpp16WebSocketEndpoint.java:69) ~[main/:na]
+	at kr.dbinc.ecos.ws.handler.AbstractWebSocketEndpoint.onMessage(AbstractWebSocketEndpoint.java:28) ~[main/:na]
+	at kr.dbinc.ecos.ws.handler.ConcurrentWebSocketHandler.handleMessage(ConcurrentWebSocketHandler.java:54) ~[main/:na]
+	at org.springframework.web.socket.handler.WebSocketHandlerDecorator.handleMessage(WebSocketHandlerDecorator.java:75) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.handler.LoggingWebSocketHandlerDecorator.handleMessage(LoggingWebSocketHandlerDecorator.java:56) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.handler.ExceptionWebSocketHandlerDecorator.handleMessage(ExceptionWebSocketHandlerDecorator.java:58) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter.handleTextMessage(StandardWebSocketHandlerAdapter.java:114) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter.access$000(StandardWebSocketHandlerAdapter.java:43) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:85) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:82) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.apache.tomcat.websocket.WsFrameBase.sendMessageText(WsFrameBase.java:415) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsFrameServer.sendMessageText(WsFrameServer.java:129) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.WsFrameBase.processDataText(WsFrameBase.java:515) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.WsFrameBase.processData(WsFrameBase.java:301) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:133) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsFrameServer.onDataAvailable(WsFrameServer.java:85) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsFrameServer.doOnDataAvailable(WsFrameServer.java:183) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsFrameServer.notifyDataAvailable(WsFrameServer.java:162) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.upgradeDispatch(WsHttpUpgradeHandler.java:157) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.coyote.http11.upgrade.UpgradeProcessorInternal.dispatch(UpgradeProcessorInternal.java:60) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:59) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2024-02-08 09:25:14.571  INFO 11532 --- [https-jsse-nio-5000-exec-6] k.d.ecos.ocpp.service.MessageLogService  : Charger=BNS006801, Message=[2, "8182", "DataTransfer", { "data": "{\"transactionId\":\"426722\",\"teleNum\":\"01092668129\"}", "messageId": "smsMessage", "vendorId": "kr.co.bluenetworks" }]
+2024-02-08 09:25:14.585 ERROR 11532 --- [https-jsse-nio-5000-exec-6] k.d.e.w.handler.Ocpp16WebSocketEndpoint  : Cannot invoke "kr.dbinc.ecos.session.ChargePoint.heartbeat()" because "chargePoint" is null
+
+java.lang.NullPointerException: Cannot invoke "kr.dbinc.ecos.session.ChargePoint.heartbeat()" because "chargePoint" is null
+	at kr.dbinc.ecos.ocpp.rpc.MessageHandlerImpl.dispatch(MessageHandlerImpl.java:74) ~[main/:na]
+	at kr.dbinc.ecos.ocpp.rpc.MessageHandlerImpl.handleMessage(MessageHandlerImpl.java:59) ~[main/:na]
+	at kr.dbinc.ecos.ws.handler.Ocpp16WebSocketEndpoint.handleTextMessage(Ocpp16WebSocketEndpoint.java:69) ~[main/:na]
+	at kr.dbinc.ecos.ws.handler.AbstractWebSocketEndpoint.onMessage(AbstractWebSocketEndpoint.java:28) ~[main/:na]
+	at kr.dbinc.ecos.ws.handler.ConcurrentWebSocketHandler.handleMessage(ConcurrentWebSocketHandler.java:54) ~[main/:na]
+	at org.springframework.web.socket.handler.WebSocketHandlerDecorator.handleMessage(WebSocketHandlerDecorator.java:75) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.handler.LoggingWebSocketHandlerDecorator.handleMessage(LoggingWebSocketHandlerDecorator.java:56) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.handler.ExceptionWebSocketHandlerDecorator.handleMessage(ExceptionWebSocketHandlerDecorator.java:58) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter.handleTextMessage(StandardWebSocketHandlerAdapter.java:114) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter.access$000(StandardWebSocketHandlerAdapter.java:43) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:85) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:82) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.apache.tomcat.websocket.WsFrameBase.sendMessageText(WsFrameBase.java:415) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsFrameServer.sendMessageText(WsFrameServer.java:129) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.WsFrameBase.processDataText(WsFrameBase.java:515) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.WsFrameBase.processData(WsFrameBase.java:301) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:133) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsFrameServer.onDataAvailable(WsFrameServer.java:85) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsFrameServer.doOnDataAvailable(WsFrameServer.java:183) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsFrameServer.notifyDataAvailable(WsFrameServer.java:162) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.upgradeDispatch(WsHttpUpgradeHandler.java:157) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.coyote.http11.upgrade.UpgradeProcessorInternal.dispatch(UpgradeProcessorInternal.java:60) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:59) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2024-02-08 10:03:30.917  INFO 12692 --- [main] kr.dbinc.ecos.OcppForJavaApplication     : Starting OcppForJavaApplication using Java 17.0.7 on DESKTOP-OBR6GFG with PID 12692 (D:\StsWorkspace\ecos-ocpp-server\bin\main started by Jerad in D:\StsWorkspace\ecos-ocpp-server)
+2024-02-08 10:03:30.929  INFO 12692 --- [main] kr.dbinc.ecos.OcppForJavaApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-02-08 10:03:33.943  INFO 12692 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-08 10:03:34.804  INFO 12692 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 839 ms. Found 23 JPA repository interfaces.
+2024-02-08 10:03:35.971  INFO 12692 --- [main] kr.dbinc.ecos.config.ConnectorConfig     : HTTP port setup to 9999
+2024-02-08 10:03:36.506  INFO 12692 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 5000 (https) 9999 (http)
+2024-02-08 10:03:36.558  INFO 12692 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-08 10:03:36.566  INFO 12692 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2024-02-08 10:03:37.086  INFO 12692 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-08 10:03:37.087  INFO 12692 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6025 ms
+2024-02-08 10:03:38.256  INFO 12692 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-08 10:03:38.483  INFO 12692 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2024-02-08 10:03:39.040  INFO 12692 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-02-08 10:03:39.286  INFO 12692 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-02-08 10:03:39.479  INFO 12692 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-02-08 10:03:39.498  INFO 12692 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2024-02-08 10:03:39.906  WARN 12692 --- [main] org.hibernate.cfg.AnnotationBinder       : HHH000457: Joined inheritance hierarchy [kr.dbinc.ecos.domain.member.Authorization] defined explicit @DiscriminatorColumn.  Legacy Hibernate behavior was to ignore the @DiscriminatorColumn.  However, as part of issue HHH-6911 we now apply the explicit @DiscriminatorColumn.  If you would prefer the legacy behavior, enable the `hibernate.discriminator.ignore_explicit_for_joined` setting (hibernate.discriminator.ignore_explicit_for_joined=true)
+2024-02-08 10:03:41.403  INFO 12692 --- [main] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: kr.dbinc.ecos.domain.security.SecurityLog (class must be instantiated by Interceptor)
+2024-02-08 10:03:41.681  INFO 12692 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-02-08 10:03:41.693  INFO 12692 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-08 10:03:43.606  INFO 12692 --- [main] org.reflections.Reflections              : Reflections took 360 ms to scan 1 urls, producing 70 keys and 406 values
+2024-02-08 10:03:43.904  INFO 12692 --- [main] org.reflections.Reflections              : Reflections took 265 ms to scan 1 urls, producing 70 keys and 406 values
+2024-02-08 10:03:44.092  INFO 12692 --- [main] org.reflections.Reflections              : Reflections took 186 ms to scan 1 urls, producing 70 keys and 406 values
+2024-02-08 10:03:44.198  INFO 12692 --- [main] kr.dbinc.ecos.config.SchedulerConfig     : datSource=HikariDataSource (HikariPool-1)
+2024-02-08 10:03:44.688  INFO 12692 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2024-02-08 10:03:46.230  INFO 12692 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-02-08 10:03:46.740  INFO 12692 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 5000 (https) 9999 (http) with context path ''
+2024-02-08 10:03:46.769  INFO 12692 --- [main] kr.dbinc.ecos.OcppForJavaApplication     : Started OcppForJavaApplication in 16.917 seconds (JVM running for 18.703)
+2024-02-08 10:03:48.295  INFO 12692 --- [RMI TCP Connection(1)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-08 10:03:48.296  INFO 12692 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-08 10:03:48.299  INFO 12692 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-02-08 10:03:52.494  INFO 12692 --- [https-jsse-nio-5000-exec-4] k.dbinc.ecos.config.SecurityInterceptor  : Connect Try Charger URI=https://127.0.0.1:5000/v2/BNS006801, findLevel=2
+2024-02-08 10:03:52.495  INFO 12692 --- [https-jsse-nio-5000-exec-4] k.d.ecos.ocpp.service.SecurityService    : username=BNS006801, password=bluenetworks, chargePointId=BNS006801
+2024-02-08 10:03:52.507  INFO 12692 --- [https-jsse-nio-5000-exec-4] k.d.ecos.ocpp.service.SecurityService    : requestPassword=bluenetworks, findPassword=bluenetworks
+2024-02-08 10:03:52.584  INFO 12692 --- [https-jsse-nio-5000-exec-4] k.d.e.w.h.AbstractWebSocketEndpoint      : [BNS006801] is Connected! By remoteAddress : /127.0.0.1:51474/session:0da53313-6a46-f10d-dfc3-80f2519b37d2
+2024-02-08 10:03:52.699  INFO 12692 --- [https-jsse-nio-5000-exec-4] k.d.ecos.ocpp.service.MessageLogService  : Charger=BNS006801, Message=[2, "1", "BootNotification", { "chargeBoxSerialNumber": "02", "chargePointModel": "CEC-2303HC1", "chargePointSerialNumber": "F0:8B:FE:0F:00:00", "chargePointVendor": "kr.co.bluenetworks", "firmwareVersion": "V1.1.7" }]
+2024-02-08 10:03:52.779  INFO 12692 --- [https-jsse-nio-5000-exec-4] k.d.e.o.service.MessageForwardService    : chargerId =kr.co.bluenetworks
+2024-02-08 10:03:53.250  INFO 12692 --- [https-jsse-nio-5000-exec-4] k.d.e.o.service.MessageForwardService    : BootNotification result=ERROR
+2024-02-08 10:03:53.389 ERROR 12692 --- [https-jsse-nio-5000-exec-4] k.d.e.w.handler.Ocpp16WebSocketEndpoint  : Unrecognized token 'ERROR': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"ERROR"; line: 1, column: 6]
+
+kr.dbinc.ecos.ocpp.rpc.exception.InternalErrorException: Unrecognized token 'ERROR': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"ERROR"; line: 1, column: 6]
+	at kr.dbinc.ecos.ocpp.service.MessageForwardService.bootNotification(MessageForwardService.java:63) ~[main/:na]
+	at kr.dbinc.ecos.ocpp.profile.Ocpp16ServiceImpl.bootNotification(Ocpp16ServiceImpl.java:110) ~[main/:na]
+	at kr.dbinc.ecos.ocpp.profile.Ocpp16ServiceImpl$$FastClassBySpringCGLIB$$4fcff954.invoke(<generated>) ~[main/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793) ~[spring-aop-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763) ~[spring-aop-5.3.22.jar:5.3.22]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.22.jar:5.3.22]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.22.jar:5.3.22]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763) ~[spring-aop-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708) ~[spring-aop-5.3.22.jar:5.3.22]
+	at kr.dbinc.ecos.ocpp.profile.Ocpp16ServiceImpl$$EnhancerBySpringCGLIB$$4903866.bootNotification(<generated>) ~[main/:na]
+	at kr.dbinc.ecos.ocpp.rpc.MessageHandlerImpl.dispatch(MessageHandlerImpl.java:80) ~[main/:na]
+	at kr.dbinc.ecos.ocpp.rpc.MessageHandlerImpl.handleMessage(MessageHandlerImpl.java:59) ~[main/:na]
+	at kr.dbinc.ecos.ws.handler.Ocpp16WebSocketEndpoint.handleTextMessage(Ocpp16WebSocketEndpoint.java:69) ~[main/:na]
+	at kr.dbinc.ecos.ws.handler.AbstractWebSocketEndpoint.onMessage(AbstractWebSocketEndpoint.java:28) ~[main/:na]
+	at kr.dbinc.ecos.ws.handler.ConcurrentWebSocketHandler.handleMessage(ConcurrentWebSocketHandler.java:54) ~[main/:na]
+	at org.springframework.web.socket.handler.WebSocketHandlerDecorator.handleMessage(WebSocketHandlerDecorator.java:75) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.handler.LoggingWebSocketHandlerDecorator.handleMessage(LoggingWebSocketHandlerDecorator.java:56) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.handler.ExceptionWebSocketHandlerDecorator.handleMessage(ExceptionWebSocketHandlerDecorator.java:58) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter.handleTextMessage(StandardWebSocketHandlerAdapter.java:114) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter.access$000(StandardWebSocketHandlerAdapter.java:43) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:85) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:82) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.apache.tomcat.websocket.WsFrameBase.sendMessageText(WsFrameBase.java:415) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsFrameServer.sendMessageText(WsFrameServer.java:129) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.WsFrameBase.processDataText(WsFrameBase.java:515) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.WsFrameBase.processData(WsFrameBase.java:301) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:133) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsFrameServer.onDataAvailable(WsFrameServer.java:85) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsFrameServer.doOnDataAvailable(WsFrameServer.java:183) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsFrameServer.notifyDataAvailable(WsFrameServer.java:162) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.upgradeDispatch(WsHttpUpgradeHandler.java:157) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.coyote.http11.upgrade.UpgradeProcessorInternal.dispatch(UpgradeProcessorInternal.java:60) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:59) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+Caused by: com.fasterxml.jackson.core.JsonParseException: Unrecognized token 'ERROR': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"ERROR"; line: 1, column: 6]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2391) ~[jackson-core-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:745) ~[jackson-core-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._reportInvalidToken(ReaderBasedJsonParser.java:2961) ~[jackson-core-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:2002) ~[jackson-core-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:802) ~[jackson-core-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:4761) ~[jackson-databind-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4667) ~[jackson-databind-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3629) ~[jackson-databind-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3597) ~[jackson-databind-2.13.3.jar:2.13.3]
+	at kr.dbinc.ecos.ocpp.service.MessageForwardService.bootNotification(MessageForwardService.java:61) ~[main/:na]
+	... 43 common frames omitted
+
+2024-02-08 10:03:53.415  INFO 12692 --- [https-jsse-nio-5000-exec-4] k.d.ecos.ocpp.service.MessageLogService  : Charger=BNS006801, Message=[4," 1","InternalError","Unrecognized token 'ERROR': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')\n at [Source: (String)\"ERROR\"; line: 1, column: 6]","{}"]
+2024-02-08 10:03:53.444  INFO 12692 --- [https-jsse-nio-5000-exec-4] k.d.ecos.ocpp.service.MessageLogService  : Charger=BNS006801, Message=[2, "8182", "DataTransfer", { "data": "{\"transactionId\":\"426722\",\"teleNum\":\"01092668129\"}", "messageId": "smsMessage", "vendorId": "kr.co.bluenetworks" }]
+2024-02-08 10:03:53.471  INFO 12692 --- [https-jsse-nio-5000-exec-4] k.d.e.ocpp.service.DataTransferService   : Data Transfer Request Data={"transactionId":"426722","teleNum":"01092668129"}
+2024-02-08 10:03:53.540 ERROR 12692 --- [https-jsse-nio-5000-exec-4] k.d.e.w.handler.Ocpp16WebSocketEndpoint  : Unrecognized token 'ERROR': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"ERROR"; line: 1, column: 6]
+
+kr.dbinc.ecos.ocpp.rpc.exception.InternalErrorException: Unrecognized token 'ERROR': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"ERROR"; line: 1, column: 6]
+	at kr.dbinc.ecos.ocpp.service.MessageForwardService.smsMessage(MessageForwardService.java:210) ~[main/:na]
+	at kr.dbinc.ecos.ocpp.operations.datatransfer.handler.SmsMessageHandler.handle(SmsMessageHandler.java:29) ~[main/:na]
+	at kr.dbinc.ecos.ocpp.operations.datatransfer.handler.AbstractDataTransferHandler.process(AbstractDataTransferHandler.java:20) ~[main/:na]
+	at kr.dbinc.ecos.ocpp.service.DataTransferService.dataTransfer(DataTransferService.java:36) ~[main/:na]
+	at kr.dbinc.ecos.ocpp.profile.Ocpp16ServiceImpl.dataTransfer(Ocpp16ServiceImpl.java:134) ~[main/:na]
+	at kr.dbinc.ecos.ocpp.profile.Ocpp16ServiceImpl$$FastClassBySpringCGLIB$$4fcff954.invoke(<generated>) ~[main/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793) ~[spring-aop-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763) ~[spring-aop-5.3.22.jar:5.3.22]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.22.jar:5.3.22]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.22.jar:5.3.22]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763) ~[spring-aop-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708) ~[spring-aop-5.3.22.jar:5.3.22]
+	at kr.dbinc.ecos.ocpp.profile.Ocpp16ServiceImpl$$EnhancerBySpringCGLIB$$4903866.dataTransfer(<generated>) ~[main/:na]
+	at kr.dbinc.ecos.ocpp.rpc.MessageHandlerImpl.dispatch(MessageHandlerImpl.java:89) ~[main/:na]
+	at kr.dbinc.ecos.ocpp.rpc.MessageHandlerImpl.handleMessage(MessageHandlerImpl.java:59) ~[main/:na]
+	at kr.dbinc.ecos.ws.handler.Ocpp16WebSocketEndpoint.handleTextMessage(Ocpp16WebSocketEndpoint.java:69) ~[main/:na]
+	at kr.dbinc.ecos.ws.handler.AbstractWebSocketEndpoint.onMessage(AbstractWebSocketEndpoint.java:28) ~[main/:na]
+	at kr.dbinc.ecos.ws.handler.ConcurrentWebSocketHandler.handleMessage(ConcurrentWebSocketHandler.java:54) ~[main/:na]
+	at org.springframework.web.socket.handler.WebSocketHandlerDecorator.handleMessage(WebSocketHandlerDecorator.java:75) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.handler.LoggingWebSocketHandlerDecorator.handleMessage(LoggingWebSocketHandlerDecorator.java:56) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.handler.ExceptionWebSocketHandlerDecorator.handleMessage(ExceptionWebSocketHandlerDecorator.java:58) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter.handleTextMessage(StandardWebSocketHandlerAdapter.java:114) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter.access$000(StandardWebSocketHandlerAdapter.java:43) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:85) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:82) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.apache.tomcat.websocket.WsFrameBase.sendMessageText(WsFrameBase.java:415) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsFrameServer.sendMessageText(WsFrameServer.java:129) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.WsFrameBase.processDataText(WsFrameBase.java:515) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.WsFrameBase.processData(WsFrameBase.java:301) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:133) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsFrameServer.onDataAvailable(WsFrameServer.java:85) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsFrameServer.doOnDataAvailable(WsFrameServer.java:183) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsFrameServer.notifyDataAvailable(WsFrameServer.java:162) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.upgradeDispatch(WsHttpUpgradeHandler.java:157) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.coyote.http11.upgrade.UpgradeProcessorInternal.dispatch(UpgradeProcessorInternal.java:60) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:59) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+Caused by: com.fasterxml.jackson.core.JsonParseException: Unrecognized token 'ERROR': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"ERROR"; line: 1, column: 6]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2391) ~[jackson-core-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:745) ~[jackson-core-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._reportInvalidToken(ReaderBasedJsonParser.java:2961) ~[jackson-core-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:2002) ~[jackson-core-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:802) ~[jackson-core-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:4761) ~[jackson-databind-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4667) ~[jackson-databind-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3629) ~[jackson-databind-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3597) ~[jackson-databind-2.13.3.jar:2.13.3]
+	at kr.dbinc.ecos.ocpp.service.MessageForwardService.smsMessage(MessageForwardService.java:208) ~[main/:na]
+	... 46 common frames omitted
+
+2024-02-08 10:03:53.551  INFO 12692 --- [https-jsse-nio-5000-exec-4] k.d.ecos.ocpp.service.MessageLogService  : Charger=BNS006801, Message=[4," 8182","InternalError","Unrecognized token 'ERROR': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')\n at [Source: (String)\"ERROR\"; line: 1, column: 6]","{}"]
+2024-02-08 10:04:34.921  INFO 12692 --- [https-jsse-nio-5000-exec-2] k.d.e.w.h.AbstractWebSocketEndpoint      : onError [ BNS006801] is Disconnected! session:0da53313-6a46-f10d-dfc3-80f2519b37d2
+2024-02-08 10:04:34.927  INFO 12692 --- [https-jsse-nio-5000-exec-2] k.d.e.w.h.AbstractWebSocketEndpoint      : onClose [BNS006801] is Disconnected! session: 0da53313-6a46-f10d-dfc3-80f2519b37d2

@@ -1,0 +1,11 @@
+{
+  "groups": [
+    {
+      "name": "ez",
+      "type": "kr.dbinc.ecos.config.CommonProperty",
+      "sourceType": "kr.dbinc.ecos.config.CommonProperty"
+    }
+  ],
+  "properties": [],
+  "hints": []
+}

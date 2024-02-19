@@ -1,0 +1,856 @@
+2024-01-11 17:14:32.358  INFO 23712 --- [main] kr.dbinc.ecos.OcppForJavaApplication     : Starting OcppForJavaApplication using Java 17.0.7 on DESKTOP-OBR6GFG with PID 23712 (D:\StsWorkspace\ecos-ocpp-server\bin\main started by Jerad in D:\StsWorkspace\ecos-ocpp-server)
+2024-01-11 17:14:32.364  INFO 23712 --- [main] kr.dbinc.ecos.OcppForJavaApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-01-11 17:14:33.928  INFO 23712 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-11 17:14:34.392  INFO 23712 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 449 ms. Found 23 JPA repository interfaces.
+2024-01-11 17:14:35.153  INFO 23712 --- [main] kr.dbinc.ecos.config.ConnectorConfig     : HTTP port setup to 9999
+2024-01-11 17:14:35.372  INFO 23712 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 5000 (https) 9999 (http)
+2024-01-11 17:14:35.385  INFO 23712 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-11 17:14:35.386  INFO 23712 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2024-01-11 17:14:35.690  INFO 23712 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-11 17:14:35.692  INFO 23712 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3242 ms
+2024-01-11 17:14:36.262  INFO 23712 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-11 17:14:36.349  INFO 23712 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2024-01-11 17:14:36.691  INFO 23712 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-01-11 17:14:36.901  INFO 23712 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-11 17:14:37.023  INFO 23712 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-11 17:14:37.045  INFO 23712 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2024-01-11 17:14:37.312  WARN 23712 --- [main] org.hibernate.cfg.AnnotationBinder       : HHH000457: Joined inheritance hierarchy [kr.dbinc.ecos.domain.member.Authorization] defined explicit @DiscriminatorColumn.  Legacy Hibernate behavior was to ignore the @DiscriminatorColumn.  However, as part of issue HHH-6911 we now apply the explicit @DiscriminatorColumn.  If you would prefer the legacy behavior, enable the `hibernate.discriminator.ignore_explicit_for_joined` setting (hibernate.discriminator.ignore_explicit_for_joined=true)
+2024-01-11 17:14:38.066  INFO 23712 --- [main] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: kr.dbinc.ecos.domain.security.SecurityLog (class must be instantiated by Interceptor)
+2024-01-11 17:14:38.299  INFO 23712 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-01-11 17:14:38.312  INFO 23712 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-11 17:14:40.309  INFO 23712 --- [main] org.reflections.Reflections              : Reflections took 427 ms to scan 1 urls, producing 70 keys and 404 values
+2024-01-11 17:14:40.519  INFO 23712 --- [main] org.reflections.Reflections              : Reflections took 157 ms to scan 1 urls, producing 70 keys and 404 values
+2024-01-11 17:14:40.663  INFO 23712 --- [main] org.reflections.Reflections              : Reflections took 142 ms to scan 1 urls, producing 70 keys and 404 values
+2024-01-11 17:14:40.812  INFO 23712 --- [main] kr.dbinc.ecos.config.SchedulerConfig     : datSource=HikariDataSource (HikariPool-1)
+2024-01-11 17:14:41.525  INFO 23712 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2024-01-11 17:14:42.905  INFO 23712 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-01-11 17:14:43.503  INFO 23712 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 5000 (https) 9999 (http) with context path ''
+2024-01-11 17:14:43.544  INFO 23712 --- [main] kr.dbinc.ecos.OcppForJavaApplication     : Started OcppForJavaApplication in 11.652 seconds (JVM running for 12.519)
+2024-01-11 17:14:44.797  INFO 23712 --- [RMI TCP Connection(1)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-11 17:14:44.800  INFO 23712 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-11 17:14:44.805  INFO 23712 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-01-11 17:15:07.340  INFO 23712 --- [https-jsse-nio-5000-exec-5] k.dbinc.ecos.config.SecurityInterceptor  : Connect Try Charger URI=https://10.10.36.51:5000/v2/SIG00000101, findLevel=2
+2024-01-11 17:15:07.341  INFO 23712 --- [https-jsse-nio-5000-exec-5] k.d.ecos.ocpp.service.SecurityService    : username=SIG00000101, password=costeltest1@3, chargePointId=SIG00000101
+2024-01-11 17:15:07.341  INFO 23712 --- [https-jsse-nio-5000-exec-5] k.d.ecos.ocpp.service.SecurityService    : requestPassword=costeltest1@3, findPassword=costeltest1@3
+2024-01-11 17:15:07.418  INFO 23712 --- [https-jsse-nio-5000-exec-5] k.d.e.w.h.AbstractWebSocketEndpoint      : [SIG00000101] is Connected!
+2024-01-11 17:15:07.611  INFO 23712 --- [https-jsse-nio-5000-exec-5] k.d.ecos.ocpp.service.MessageLogService  : Charger=SIG00000101, Message=[2, "1", "BootNotification", { "chargeBoxSerialNumber": "02", "chargePointModel": "CEC-2303HC1", "chargePointSerialNumber": "F0:8B:FE:0F:00:00", "chargePointVendor": "COSTEL", "firmwareVersion": "V1.1.7" }]
+2024-01-11 17:15:07.731  INFO 23712 --- [https-jsse-nio-5000-exec-5] k.d.e.o.service.MessageForwardService    : chargerId =COSTEL
+2024-01-11 17:15:08.889  INFO 23712 --- [https-jsse-nio-5000-exec-5] k.d.e.o.service.MessageForwardService    : BootNotification result={"currentTime":"2024-01-11T08:15:08.485+00:00","interval":120,"status":"Accepted"}
+2024-01-11 17:15:08.997  INFO 23712 --- [https-jsse-nio-5000-exec-5] k.d.ecos.ocpp.service.MessageLogService  : Charger=SIG00000101, Message=[3,"1",{"currentTime":"2024-01-11T08:15:08.485Z","interval":120,"status":"Accepted"}]
+2024-01-11 17:15:09.045  INFO 23712 --- [https-jsse-nio-5000-exec-5] k.d.ecos.ocpp.service.MessageLogService  : Charger=SIG00000101, Message=[2, "8182", "DataTransfer", { "data": "{\"connectorId\":1,\"transactionId\":63037}", "messageId": "getPrice", "vendorId": "VENID" }]
+2024-01-11 17:15:09.084  INFO 23712 --- [https-jsse-nio-5000-exec-5] k.d.e.ocpp.service.DataTransferService   : Data Transfer Request Data={"connectorId":1,"transactionId":63037}
+2024-01-11 17:15:09.263  INFO 23712 --- [https-jsse-nio-5000-exec-5] k.d.ecos.ocpp.service.MessageLogService  : Charger=SIG00000101, Message=[3,"8182",{"status":"Accepted","data":"{\"unitPrice\":[]}"}]
+2024-01-11 17:15:35.665  INFO 23712 --- [https-jsse-nio-5000-exec-8] k.d.e.w.h.AbstractWebSocketEndpoint      : [SIG00000101] is Disconnected!
+2024-01-11 17:15:35.668  INFO 23712 --- [https-jsse-nio-5000-exec-8] k.d.e.w.h.AbstractWebSocketEndpoint      : [SIG00000101] is Disconnected!
+2024-01-11 17:15:35.726  INFO 23712 --- [https-jsse-nio-5000-exec-6] k.dbinc.ecos.config.SecurityInterceptor  : Connect Try Charger URI=https://10.10.36.51:5000/v2/SIG00000101, findLevel=2
+2024-01-11 17:15:35.727  INFO 23712 --- [https-jsse-nio-5000-exec-6] k.d.ecos.ocpp.service.SecurityService    : username=SIG00000101, password=costeltest1@3, chargePointId=SIG00000101
+2024-01-11 17:15:35.731  INFO 23712 --- [https-jsse-nio-5000-exec-6] k.d.ecos.ocpp.service.SecurityService    : requestPassword=costeltest1@3, findPassword=costeltest1@3
+2024-01-11 17:15:35.738  INFO 23712 --- [https-jsse-nio-5000-exec-6] k.d.e.w.h.AbstractWebSocketEndpoint      : [SIG00000101] is Connected!
+2024-01-11 17:15:35.805  INFO 23712 --- [https-jsse-nio-5000-exec-6] k.d.ecos.ocpp.service.MessageLogService  : Charger=SIG00000101, Message=[2, "1", "BootNotification", { "chargeBoxSerialNumber": "02", "chargePointModel": "CEC-2303HC1", "chargePointSerialNumber": "F0:8B:FE:0F:00:00", "chargePointVendor": "COSTEL", "firmwareVersion": "V1.1.7" }]
+2024-01-11 17:15:35.837  INFO 23712 --- [https-jsse-nio-5000-exec-6] k.d.e.o.service.MessageForwardService    : chargerId =COSTEL
+2024-01-11 17:15:35.859  INFO 23712 --- [https-jsse-nio-5000-exec-6] k.d.e.o.service.MessageForwardService    : BootNotification result={"currentTime":"2024-01-11T08:15:35.844+00:00","interval":120,"status":"Accepted"}
+2024-01-11 17:15:35.919  INFO 23712 --- [https-jsse-nio-5000-exec-6] k.d.ecos.ocpp.service.MessageLogService  : Charger=SIG00000101, Message=[3,"1",{"currentTime":"2024-01-11T08:15:35.844Z","interval":120,"status":"Accepted"}]
+2024-01-11 17:15:35.967  INFO 23712 --- [https-jsse-nio-5000-exec-6] k.d.ecos.ocpp.service.MessageLogService  : Charger=SIG00000101, Message=[2, "8182", "DataTransfer", { "data": "{\"connectorId\":1,\"transactionId\":63037}", "messageId": "getPrice1", "vendorId": "VENID" }]
+2024-01-11 17:15:36.000  INFO 23712 --- [https-jsse-nio-5000-exec-6] k.d.e.ocpp.service.DataTransferService   : Data Transfer Request Data={"connectorId":1,"transactionId":63037}
+2024-01-11 17:15:36.089  INFO 23712 --- [https-jsse-nio-5000-exec-6] k.d.ecos.ocpp.service.MessageLogService  : Charger=SIG00000101, Message=[3,"8182",{"status":"Accepted","data":"{\"unitPrice\":[]}"}]
+2024-01-11 17:22:05.597  INFO 7524 --- [main] kr.dbinc.ecos.OcppForJavaApplication     : Starting OcppForJavaApplication using Java 17.0.7 on DESKTOP-OBR6GFG with PID 7524 (D:\StsWorkspace\ecos-ocpp-server\bin\main started by Jerad in D:\StsWorkspace\ecos-ocpp-server)
+2024-01-11 17:22:05.603  INFO 7524 --- [main] kr.dbinc.ecos.OcppForJavaApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-01-11 17:22:06.847  INFO 7524 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-11 17:22:07.169  INFO 7524 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 310 ms. Found 23 JPA repository interfaces.
+2024-01-11 17:22:07.645  INFO 7524 --- [main] kr.dbinc.ecos.config.ConnectorConfig     : HTTP port setup to 9999
+2024-01-11 17:22:07.850  INFO 7524 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 5000 (https) 9999 (http)
+2024-01-11 17:22:07.864  INFO 7524 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-11 17:22:07.864  INFO 7524 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2024-01-11 17:22:08.077  INFO 7524 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-11 17:22:08.079  INFO 7524 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2371 ms
+2024-01-11 17:22:08.599  INFO 7524 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-11 17:22:08.732  INFO 7524 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2024-01-11 17:22:08.948  INFO 7524 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-01-11 17:22:09.071  INFO 7524 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-11 17:22:09.176  INFO 7524 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-11 17:22:09.190  INFO 7524 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2024-01-11 17:22:09.390  WARN 7524 --- [main] org.hibernate.cfg.AnnotationBinder       : HHH000457: Joined inheritance hierarchy [kr.dbinc.ecos.domain.member.Authorization] defined explicit @DiscriminatorColumn.  Legacy Hibernate behavior was to ignore the @DiscriminatorColumn.  However, as part of issue HHH-6911 we now apply the explicit @DiscriminatorColumn.  If you would prefer the legacy behavior, enable the `hibernate.discriminator.ignore_explicit_for_joined` setting (hibernate.discriminator.ignore_explicit_for_joined=true)
+2024-01-11 17:22:09.938  INFO 7524 --- [main] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: kr.dbinc.ecos.domain.security.SecurityLog (class must be instantiated by Interceptor)
+2024-01-11 17:22:10.110  INFO 7524 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-01-11 17:22:10.120  INFO 7524 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-11 17:22:11.650  INFO 7524 --- [main] org.reflections.Reflections              : Reflections took 157 ms to scan 1 urls, producing 70 keys and 404 values
+2024-01-11 17:22:11.783  INFO 7524 --- [main] org.reflections.Reflections              : Reflections took 113 ms to scan 1 urls, producing 70 keys and 404 values
+2024-01-11 17:22:11.887  INFO 7524 --- [main] org.reflections.Reflections              : Reflections took 102 ms to scan 1 urls, producing 70 keys and 404 values
+2024-01-11 17:22:11.970  INFO 7524 --- [main] kr.dbinc.ecos.config.SchedulerConfig     : datSource=HikariDataSource (HikariPool-1)
+2024-01-11 17:22:12.355  INFO 7524 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2024-01-11 17:22:13.577  INFO 7524 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-01-11 17:22:13.937  INFO 7524 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 5000 (https) 9999 (http) with context path ''
+2024-01-11 17:22:13.954  INFO 7524 --- [main] kr.dbinc.ecos.OcppForJavaApplication     : Started OcppForJavaApplication in 8.845 seconds (JVM running for 9.579)
+2024-01-11 17:22:14.622  INFO 7524 --- [RMI TCP Connection(1)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-11 17:22:14.624  INFO 7524 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-11 17:22:14.625  INFO 7524 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-01-11 17:22:18.553  INFO 7524 --- [https-jsse-nio-5000-exec-6] k.dbinc.ecos.config.SecurityInterceptor  : Connect Try Charger URI=https://10.10.36.51:5000/v2/SIG00000101, findLevel=2
+2024-01-11 17:22:18.555  INFO 7524 --- [https-jsse-nio-5000-exec-6] k.d.ecos.ocpp.service.SecurityService    : username=SIG00000101, password=costeltest1@3, chargePointId=SIG00000101
+2024-01-11 17:22:18.555  INFO 7524 --- [https-jsse-nio-5000-exec-6] k.d.ecos.ocpp.service.SecurityService    : requestPassword=costeltest1@3, findPassword=costeltest1@3
+2024-01-11 17:22:18.600  INFO 7524 --- [https-jsse-nio-5000-exec-6] k.d.e.w.h.AbstractWebSocketEndpoint      : [SIG00000101] is Connected!
+2024-01-11 17:22:18.765  INFO 7524 --- [https-jsse-nio-5000-exec-6] k.d.ecos.ocpp.service.MessageLogService  : Charger=SIG00000101, Message=[2, "1", "BootNotification", { "chargeBoxSerialNumber": "02", "chargePointModel": "CEC-2303HC1", "chargePointSerialNumber": "F0:8B:FE:0F:00:00", "chargePointVendor": "COSTEL", "firmwareVersion": "V1.1.7" }]
+2024-01-11 17:22:18.890  INFO 7524 --- [https-jsse-nio-5000-exec-6] k.d.e.o.service.MessageForwardService    : chargerId =COSTEL
+2024-01-11 17:22:19.339  INFO 7524 --- [https-jsse-nio-5000-exec-6] k.d.e.o.service.MessageForwardService    : BootNotification result={"currentTime":"2024-01-11T08:22:19.306+00:00","interval":120,"status":"Accepted"}
+2024-01-11 17:22:19.449  INFO 7524 --- [https-jsse-nio-5000-exec-6] k.d.ecos.ocpp.service.MessageLogService  : Charger=SIG00000101, Message=[3,"1",{"currentTime":"2024-01-11T08:22:19.306Z","interval":120,"status":"Accepted"}]
+2024-01-11 17:22:19.507  INFO 7524 --- [https-jsse-nio-5000-exec-6] k.d.ecos.ocpp.service.MessageLogService  : Charger=SIG00000101, Message=[2, "8182", "DataTransfer", { "data": "{\"timestamp\":"2023-03-16T10:42:24Z",\"idTag\":63037}", "messageId": "getPrice1", "vendorId": "VENID" }]
+2024-01-11 17:22:19.545 ERROR 7524 --- [https-jsse-nio-5000-exec-6] k.d.ecos.ocpp.rpc.MessageFactoryImpl     : Unexpected character ('2' (code 50)): was expecting comma to separate Object entries
+ at [Source: (String)"[2, "8182", "DataTransfer", { "data": "{\"timestamp\":"2023-03-16T10:42:24Z",\"idTag\":63037}", "messageId": "getPrice1", "vendorId": "VENID" }]"; line: 1, column: 57]
+
+com.fasterxml.jackson.core.JsonParseException: Unexpected character ('2' (code 50)): was expecting comma to separate Object entries
+ at [Source: (String)"[2, "8182", "DataTransfer", { "data": "{\"timestamp\":"2023-03-16T10:42:24Z",\"idTag\":63037}", "messageId": "getPrice1", "vendorId": "VENID" }]"; line: 1, column: 57]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2391) ~[jackson-core-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:735) ~[jackson-core-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:659) ~[jackson-core-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._skipComma(ReaderBasedJsonParser.java:2382) ~[jackson-core-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:716) ~[jackson-core-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer._deserializeUsingPropertyBased(BeanDeserializer.java:422) ~[jackson-databind-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.deserializeFromObjectUsingNonDefault(BeanDeserializerBase.java:1405) ~[jackson-databind-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserializeFromObject(BeanDeserializer.java:351) ~[jackson-databind-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:184) ~[jackson-databind-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:323) ~[jackson-databind-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.databind.ObjectMapper._readValue(ObjectMapper.java:4650) ~[jackson-databind-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:2831) ~[jackson-databind-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.core.JsonParser.readValueAs(JsonParser.java:2277) ~[jackson-core-2.13.3.jar:2.13.3]
+	at kr.dbinc.ecos.ocpp.rpc.CallFactoryImpl.createCall(CallFactoryImpl.java:41) ~[main/:na]
+	at kr.dbinc.ecos.ocpp.rpc.MessageFactoryImpl.createMessage(MessageFactoryImpl.java:29) ~[main/:na]
+	at kr.dbinc.ecos.ws.handler.Ocpp16WebSocketEndpoint.handleTextMessage(Ocpp16WebSocketEndpoint.java:68) ~[main/:na]
+	at kr.dbinc.ecos.ws.handler.AbstractWebSocketEndpoint.onMessage(AbstractWebSocketEndpoint.java:28) ~[main/:na]
+	at kr.dbinc.ecos.ws.handler.ConcurrentWebSocketHandler.handleMessage(ConcurrentWebSocketHandler.java:31) ~[main/:na]
+	at org.springframework.web.socket.handler.WebSocketHandlerDecorator.handleMessage(WebSocketHandlerDecorator.java:75) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.handler.LoggingWebSocketHandlerDecorator.handleMessage(LoggingWebSocketHandlerDecorator.java:56) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.handler.ExceptionWebSocketHandlerDecorator.handleMessage(ExceptionWebSocketHandlerDecorator.java:58) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter.handleTextMessage(StandardWebSocketHandlerAdapter.java:114) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter.access$000(StandardWebSocketHandlerAdapter.java:43) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:85) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:82) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.apache.tomcat.websocket.WsFrameBase.sendMessageText(WsFrameBase.java:415) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsFrameServer.sendMessageText(WsFrameServer.java:129) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.WsFrameBase.processDataText(WsFrameBase.java:515) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.WsFrameBase.processData(WsFrameBase.java:301) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:133) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsFrameServer.onDataAvailable(WsFrameServer.java:85) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsFrameServer.doOnDataAvailable(WsFrameServer.java:183) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsFrameServer.notifyDataAvailable(WsFrameServer.java:162) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.upgradeDispatch(WsHttpUpgradeHandler.java:157) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.coyote.http11.upgrade.UpgradeProcessorInternal.dispatch(UpgradeProcessorInternal.java:60) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:59) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2024-01-11 17:22:19.553 ERROR 7524 --- [https-jsse-nio-5000-exec-6] k.d.e.w.handler.Ocpp16WebSocketEndpoint  : Message 처리 중에 에러가 발생했습니다.
+
+kr.dbinc.ecos.ocpp.rpc.exception.InternalErrorException: Message 처리 중에 에러가 발생했습니다.
+	at kr.dbinc.ecos.ocpp.rpc.MessageFactoryImpl.createMessage(MessageFactoryImpl.java:39) ~[main/:na]
+	at kr.dbinc.ecos.ws.handler.Ocpp16WebSocketEndpoint.handleTextMessage(Ocpp16WebSocketEndpoint.java:68) ~[main/:na]
+	at kr.dbinc.ecos.ws.handler.AbstractWebSocketEndpoint.onMessage(AbstractWebSocketEndpoint.java:28) ~[main/:na]
+	at kr.dbinc.ecos.ws.handler.ConcurrentWebSocketHandler.handleMessage(ConcurrentWebSocketHandler.java:31) ~[main/:na]
+	at org.springframework.web.socket.handler.WebSocketHandlerDecorator.handleMessage(WebSocketHandlerDecorator.java:75) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.handler.LoggingWebSocketHandlerDecorator.handleMessage(LoggingWebSocketHandlerDecorator.java:56) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.handler.ExceptionWebSocketHandlerDecorator.handleMessage(ExceptionWebSocketHandlerDecorator.java:58) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter.handleTextMessage(StandardWebSocketHandlerAdapter.java:114) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter.access$000(StandardWebSocketHandlerAdapter.java:43) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:85) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:82) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.apache.tomcat.websocket.WsFrameBase.sendMessageText(WsFrameBase.java:415) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsFrameServer.sendMessageText(WsFrameServer.java:129) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.WsFrameBase.processDataText(WsFrameBase.java:515) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.WsFrameBase.processData(WsFrameBase.java:301) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:133) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsFrameServer.onDataAvailable(WsFrameServer.java:85) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsFrameServer.doOnDataAvailable(WsFrameServer.java:183) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsFrameServer.notifyDataAvailable(WsFrameServer.java:162) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.upgradeDispatch(WsHttpUpgradeHandler.java:157) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.coyote.http11.upgrade.UpgradeProcessorInternal.dispatch(UpgradeProcessorInternal.java:60) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:59) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2024-01-11 17:22:19.577  INFO 7524 --- [https-jsse-nio-5000-exec-6] k.d.ecos.ocpp.service.MessageLogService  : Charger=SIG00000101, Message=[4," 8182","InternalError","Message 처리 중에 에러가 발생했습니다.","{}"]
+2024-01-11 17:23:05.167  INFO 7524 --- [https-jsse-nio-5000-exec-7] k.d.e.w.h.AbstractWebSocketEndpoint      : [SIG00000101] is Disconnected!
+2024-01-11 17:23:05.178  INFO 7524 --- [https-jsse-nio-5000-exec-7] k.d.e.w.h.AbstractWebSocketEndpoint      : [SIG00000101] is Disconnected!
+2024-01-11 17:23:05.203  INFO 7524 --- [https-jsse-nio-5000-exec-3] k.dbinc.ecos.config.SecurityInterceptor  : Connect Try Charger URI=https://10.10.36.51:5000/v2/SIG00000101, findLevel=2
+2024-01-11 17:23:05.204  INFO 7524 --- [https-jsse-nio-5000-exec-3] k.d.ecos.ocpp.service.SecurityService    : username=SIG00000101, password=costeltest1@3, chargePointId=SIG00000101
+2024-01-11 17:23:05.204  INFO 7524 --- [https-jsse-nio-5000-exec-3] k.d.ecos.ocpp.service.SecurityService    : requestPassword=costeltest1@3, findPassword=costeltest1@3
+2024-01-11 17:23:05.207  INFO 7524 --- [https-jsse-nio-5000-exec-3] k.d.e.w.h.AbstractWebSocketEndpoint      : [SIG00000101] is Connected!
+2024-01-11 17:23:05.245  INFO 7524 --- [https-jsse-nio-5000-exec-7] kr.dbinc.ecos.session.ChargePointStore   : 세션 아이디가 일치하지 않습니다. prev=26d698c1-eb97-8d8d-9636-f37ed169c7b6, cur =71d1fbb6-9cbe-3d32-57d9-d5ab95b34cc9
+2024-01-11 17:23:05.277  INFO 7524 --- [https-jsse-nio-5000-exec-3] k.d.ecos.ocpp.service.MessageLogService  : Charger=SIG00000101, Message=[2, "1", "BootNotification", { "chargeBoxSerialNumber": "02", "chargePointModel": "CEC-2303HC1", "chargePointSerialNumber": "F0:8B:FE:0F:00:00", "chargePointVendor": "COSTEL", "firmwareVersion": "V1.1.7" }]
+2024-01-11 17:23:05.311  INFO 7524 --- [https-jsse-nio-5000-exec-3] k.d.e.o.service.MessageForwardService    : chargerId =COSTEL
+2024-01-11 17:23:05.359  INFO 7524 --- [https-jsse-nio-5000-exec-3] k.d.e.o.service.MessageForwardService    : BootNotification result={"currentTime":"2024-01-11T08:23:05.325+00:00","interval":120,"status":"Accepted"}
+2024-01-11 17:23:05.414  INFO 7524 --- [https-jsse-nio-5000-exec-3] k.d.ecos.ocpp.service.MessageLogService  : Charger=SIG00000101, Message=[3,"1",{"currentTime":"2024-01-11T08:23:05.325Z","interval":120,"status":"Accepted"}]
+2024-01-11 17:23:05.462  INFO 7524 --- [https-jsse-nio-5000-exec-3] k.d.ecos.ocpp.service.MessageLogService  : Charger=SIG00000101, Message=[2, "8182", "DataTransfer", { "data": "{\"timestamp\":"2023-03-16T10:42:24Z",\"idTag\":"63037"}", "messageId": "getPrice", "vendorId": "VENID" }]
+2024-01-11 17:23:05.487 ERROR 7524 --- [https-jsse-nio-5000-exec-3] k.d.ecos.ocpp.rpc.MessageFactoryImpl     : Unexpected character ('2' (code 50)): was expecting comma to separate Object entries
+ at [Source: (String)"[2, "8182", "DataTransfer", { "data": "{\"timestamp\":"2023-03-16T10:42:24Z",\"idTag\":"63037"}", "messageId": "getPrice", "vendorId": "VENID" }]"; line: 1, column: 57]
+
+com.fasterxml.jackson.core.JsonParseException: Unexpected character ('2' (code 50)): was expecting comma to separate Object entries
+ at [Source: (String)"[2, "8182", "DataTransfer", { "data": "{\"timestamp\":"2023-03-16T10:42:24Z",\"idTag\":"63037"}", "messageId": "getPrice", "vendorId": "VENID" }]"; line: 1, column: 57]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2391) ~[jackson-core-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:735) ~[jackson-core-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:659) ~[jackson-core-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._skipComma(ReaderBasedJsonParser.java:2382) ~[jackson-core-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:716) ~[jackson-core-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer._deserializeUsingPropertyBased(BeanDeserializer.java:422) ~[jackson-databind-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.deserializeFromObjectUsingNonDefault(BeanDeserializerBase.java:1405) ~[jackson-databind-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserializeFromObject(BeanDeserializer.java:351) ~[jackson-databind-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:184) ~[jackson-databind-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:323) ~[jackson-databind-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.databind.ObjectMapper._readValue(ObjectMapper.java:4650) ~[jackson-databind-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:2831) ~[jackson-databind-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.core.JsonParser.readValueAs(JsonParser.java:2277) ~[jackson-core-2.13.3.jar:2.13.3]
+	at kr.dbinc.ecos.ocpp.rpc.CallFactoryImpl.createCall(CallFactoryImpl.java:41) ~[main/:na]
+	at kr.dbinc.ecos.ocpp.rpc.MessageFactoryImpl.createMessage(MessageFactoryImpl.java:29) ~[main/:na]
+	at kr.dbinc.ecos.ws.handler.Ocpp16WebSocketEndpoint.handleTextMessage(Ocpp16WebSocketEndpoint.java:68) ~[main/:na]
+	at kr.dbinc.ecos.ws.handler.AbstractWebSocketEndpoint.onMessage(AbstractWebSocketEndpoint.java:28) ~[main/:na]
+	at kr.dbinc.ecos.ws.handler.ConcurrentWebSocketHandler.handleMessage(ConcurrentWebSocketHandler.java:31) ~[main/:na]
+	at org.springframework.web.socket.handler.WebSocketHandlerDecorator.handleMessage(WebSocketHandlerDecorator.java:75) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.handler.LoggingWebSocketHandlerDecorator.handleMessage(LoggingWebSocketHandlerDecorator.java:56) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.handler.ExceptionWebSocketHandlerDecorator.handleMessage(ExceptionWebSocketHandlerDecorator.java:58) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter.handleTextMessage(StandardWebSocketHandlerAdapter.java:114) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter.access$000(StandardWebSocketHandlerAdapter.java:43) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:85) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:82) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.apache.tomcat.websocket.WsFrameBase.sendMessageText(WsFrameBase.java:415) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsFrameServer.sendMessageText(WsFrameServer.java:129) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.WsFrameBase.processDataText(WsFrameBase.java:515) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.WsFrameBase.processData(WsFrameBase.java:301) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:133) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsFrameServer.onDataAvailable(WsFrameServer.java:85) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsFrameServer.doOnDataAvailable(WsFrameServer.java:183) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsFrameServer.notifyDataAvailable(WsFrameServer.java:162) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.upgradeDispatch(WsHttpUpgradeHandler.java:157) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.coyote.http11.upgrade.UpgradeProcessorInternal.dispatch(UpgradeProcessorInternal.java:60) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:59) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2024-01-11 17:23:05.493 ERROR 7524 --- [https-jsse-nio-5000-exec-3] k.d.e.w.handler.Ocpp16WebSocketEndpoint  : Message 처리 중에 에러가 발생했습니다.
+
+kr.dbinc.ecos.ocpp.rpc.exception.InternalErrorException: Message 처리 중에 에러가 발생했습니다.
+	at kr.dbinc.ecos.ocpp.rpc.MessageFactoryImpl.createMessage(MessageFactoryImpl.java:39) ~[main/:na]
+	at kr.dbinc.ecos.ws.handler.Ocpp16WebSocketEndpoint.handleTextMessage(Ocpp16WebSocketEndpoint.java:68) ~[main/:na]
+	at kr.dbinc.ecos.ws.handler.AbstractWebSocketEndpoint.onMessage(AbstractWebSocketEndpoint.java:28) ~[main/:na]
+	at kr.dbinc.ecos.ws.handler.ConcurrentWebSocketHandler.handleMessage(ConcurrentWebSocketHandler.java:31) ~[main/:na]
+	at org.springframework.web.socket.handler.WebSocketHandlerDecorator.handleMessage(WebSocketHandlerDecorator.java:75) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.handler.LoggingWebSocketHandlerDecorator.handleMessage(LoggingWebSocketHandlerDecorator.java:56) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.handler.ExceptionWebSocketHandlerDecorator.handleMessage(ExceptionWebSocketHandlerDecorator.java:58) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter.handleTextMessage(StandardWebSocketHandlerAdapter.java:114) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter.access$000(StandardWebSocketHandlerAdapter.java:43) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:85) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:82) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.apache.tomcat.websocket.WsFrameBase.sendMessageText(WsFrameBase.java:415) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsFrameServer.sendMessageText(WsFrameServer.java:129) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.WsFrameBase.processDataText(WsFrameBase.java:515) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.WsFrameBase.processData(WsFrameBase.java:301) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:133) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsFrameServer.onDataAvailable(WsFrameServer.java:85) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsFrameServer.doOnDataAvailable(WsFrameServer.java:183) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsFrameServer.notifyDataAvailable(WsFrameServer.java:162) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.upgradeDispatch(WsHttpUpgradeHandler.java:157) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.coyote.http11.upgrade.UpgradeProcessorInternal.dispatch(UpgradeProcessorInternal.java:60) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:59) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2024-01-11 17:23:05.514  INFO 7524 --- [https-jsse-nio-5000-exec-3] k.d.ecos.ocpp.service.MessageLogService  : Charger=SIG00000101, Message=[4," 8182","InternalError","Message 처리 중에 에러가 발생했습니다.","{}"]
+2024-01-11 17:26:12.013  INFO 7524 --- [https-jsse-nio-5000-exec-4] k.d.e.w.h.AbstractWebSocketEndpoint      : [SIG00000101] is Disconnected!
+2024-01-11 17:26:12.014  INFO 7524 --- [https-jsse-nio-5000-exec-4] k.d.e.w.h.AbstractWebSocketEndpoint      : [SIG00000101] is Disconnected!
+2024-01-11 17:26:12.019  WARN 7524 --- [https-jsse-nio-5000-exec-4] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.mariadb.jdbc.Connection@7cf9c530 ((conn=8419) Connection.setNetworkTimeout cannot be called on a closed connection). Possibly consider using a shorter maxLifetime value.
+2024-01-11 17:26:12.031  WARN 7524 --- [https-jsse-nio-5000-exec-4] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.mariadb.jdbc.Connection@6e3af020 ((conn=8420) Connection.setNetworkTimeout cannot be called on a closed connection). Possibly consider using a shorter maxLifetime value.
+2024-01-11 17:26:12.055  WARN 7524 --- [https-jsse-nio-5000-exec-4] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.mariadb.jdbc.Connection@5c586892 ((conn=8421) Connection.setNetworkTimeout cannot be called on a closed connection). Possibly consider using a shorter maxLifetime value.
+2024-01-11 17:26:12.058  WARN 7524 --- [https-jsse-nio-5000-exec-4] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.mariadb.jdbc.Connection@b5cf935 ((conn=8422) Connection.setNetworkTimeout cannot be called on a closed connection). Possibly consider using a shorter maxLifetime value.
+2024-01-11 17:26:12.060  WARN 7524 --- [https-jsse-nio-5000-exec-4] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.mariadb.jdbc.Connection@291fafe0 ((conn=8423) Connection.setNetworkTimeout cannot be called on a closed connection). Possibly consider using a shorter maxLifetime value.
+2024-01-11 17:26:12.063  WARN 7524 --- [https-jsse-nio-5000-exec-4] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.mariadb.jdbc.Connection@101df113 ((conn=8424) Connection.setNetworkTimeout cannot be called on a closed connection). Possibly consider using a shorter maxLifetime value.
+2024-01-11 17:26:12.064  INFO 7524 --- [https-jsse-nio-5000-exec-1] k.dbinc.ecos.config.SecurityInterceptor  : Connect Try Charger URI=https://10.10.36.51:5000/v2/SIG00000101, findLevel=2
+2024-01-11 17:26:12.065  WARN 7524 --- [https-jsse-nio-5000-exec-4] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.mariadb.jdbc.Connection@f1e177a ((conn=8425) Connection.setNetworkTimeout cannot be called on a closed connection). Possibly consider using a shorter maxLifetime value.
+2024-01-11 17:26:12.065  INFO 7524 --- [https-jsse-nio-5000-exec-1] k.d.ecos.ocpp.service.SecurityService    : username=SIG00000101, password=costeltest1@3, chargePointId=SIG00000101
+2024-01-11 17:26:12.066  INFO 7524 --- [https-jsse-nio-5000-exec-1] k.d.ecos.ocpp.service.SecurityService    : requestPassword=costeltest1@3, findPassword=costeltest1@3
+2024-01-11 17:26:12.067  WARN 7524 --- [https-jsse-nio-5000-exec-4] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.mariadb.jdbc.Connection@6367d2fd ((conn=8426) Connection.setNetworkTimeout cannot be called on a closed connection). Possibly consider using a shorter maxLifetime value.
+2024-01-11 17:26:12.068  WARN 7524 --- [https-jsse-nio-5000-exec-4] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.mariadb.jdbc.Connection@375301de ((conn=8427) Connection.setNetworkTimeout cannot be called on a closed connection). Possibly consider using a shorter maxLifetime value.
+2024-01-11 17:26:12.069  WARN 7524 --- [https-jsse-nio-5000-exec-4] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.mariadb.jdbc.Connection@4839eb4e ((conn=8428) Connection.setNetworkTimeout cannot be called on a closed connection). Possibly consider using a shorter maxLifetime value.
+2024-01-11 17:26:12.069  INFO 7524 --- [https-jsse-nio-5000-exec-1] k.d.e.w.h.AbstractWebSocketEndpoint      : [SIG00000101] is Connected!
+2024-01-11 17:26:12.116  INFO 7524 --- [https-jsse-nio-5000-exec-4] kr.dbinc.ecos.session.ChargePointStore   : 세션 아이디가 일치하지 않습니다. prev=d4869ed5-799d-5ee3-c96f-5b2c29759c10, cur =26d698c1-eb97-8d8d-9636-f37ed169c7b6
+2024-01-11 17:26:12.178  INFO 7524 --- [https-jsse-nio-5000-exec-1] k.d.ecos.ocpp.service.MessageLogService  : Charger=SIG00000101, Message=[2, "1", "BootNotification", { "chargeBoxSerialNumber": "02", "chargePointModel": "CEC-2303HC1", "chargePointSerialNumber": "F0:8B:FE:0F:00:00", "chargePointVendor": "COSTEL", "firmwareVersion": "V1.1.7" }]
+2024-01-11 17:26:12.214  INFO 7524 --- [https-jsse-nio-5000-exec-1] k.d.e.o.service.MessageForwardService    : chargerId =COSTEL
+2024-01-11 17:26:12.272  INFO 7524 --- [https-jsse-nio-5000-exec-1] k.d.e.o.service.MessageForwardService    : BootNotification result={"currentTime":"2024-01-11T08:26:12.236+00:00","interval":120,"status":"Accepted"}
+2024-01-11 17:26:12.329  INFO 7524 --- [https-jsse-nio-5000-exec-1] k.d.ecos.ocpp.service.MessageLogService  : Charger=SIG00000101, Message=[3,"1",{"currentTime":"2024-01-11T08:26:12.236Z","interval":120,"status":"Accepted"}]
+2024-01-11 17:26:12.381  INFO 7524 --- [https-jsse-nio-5000-exec-1] k.d.ecos.ocpp.service.MessageLogService  : Charger=SIG00000101, Message=[2, "8182", "DataTransfer", { "data": "{\"timestamp\":\"2023-03-16T10:42:24Z\",\"idTag\":\"63037\"}", "messageId": "getPrice", "vendorId": "VENID" }]
+2024-01-11 17:26:12.440  INFO 7524 --- [https-jsse-nio-5000-exec-1] k.d.e.ocpp.service.DataTransferService   : Data Transfer Request Data={"timestamp":"2023-03-16T10:42:24Z","idTag":"63037"}
+2024-01-11 17:26:12.551  INFO 7524 --- [https-jsse-nio-5000-exec-1] k.d.ecos.ocpp.service.MessageLogService  : Charger=SIG00000101, Message=[3,"8182",{"status":"Accepted","data":"{\"timestamp\":\"2023-03-16T10:42:24.000+00:00\",\"idTag\":\"63037\",\"unitPrice\":[]}"}]
+2024-01-11 17:27:31.799  INFO 7524 --- [https-jsse-nio-5000-exec-2] k.d.e.w.h.AbstractWebSocketEndpoint      : [SIG00000101] is Disconnected!
+2024-01-11 17:27:31.800  INFO 7524 --- [https-jsse-nio-5000-exec-2] k.d.e.w.h.AbstractWebSocketEndpoint      : [SIG00000101] is Disconnected!
+2024-01-11 17:27:31.823  INFO 7524 --- [https-jsse-nio-5000-exec-9] k.dbinc.ecos.config.SecurityInterceptor  : Connect Try Charger URI=https://10.10.36.51:5000/v2/SIG00000101, findLevel=2
+2024-01-11 17:27:31.826  INFO 7524 --- [https-jsse-nio-5000-exec-9] k.d.ecos.ocpp.service.SecurityService    : username=SIG00000101, password=costeltest1@3, chargePointId=SIG00000101
+2024-01-11 17:27:31.827  INFO 7524 --- [https-jsse-nio-5000-exec-9] k.d.ecos.ocpp.service.SecurityService    : requestPassword=costeltest1@3, findPassword=costeltest1@3
+2024-01-11 17:27:31.828  INFO 7524 --- [https-jsse-nio-5000-exec-9] k.d.e.w.h.AbstractWebSocketEndpoint      : [SIG00000101] is Connected!
+2024-01-11 17:27:31.851  INFO 7524 --- [https-jsse-nio-5000-exec-2] kr.dbinc.ecos.session.ChargePointStore   : 세션 아이디가 일치하지 않습니다. prev=8f4c62cf-d01e-4fed-b6f0-e2178a606902, cur =d4869ed5-799d-5ee3-c96f-5b2c29759c10
+2024-01-11 17:27:31.892  INFO 7524 --- [https-jsse-nio-5000-exec-9] k.d.ecos.ocpp.service.MessageLogService  : Charger=SIG00000101, Message=[2, "1", "BootNotification", { "chargeBoxSerialNumber": "02", "chargePointModel": "CEC-2303HC1", "chargePointSerialNumber": "F0:8B:FE:0F:00:00", "chargePointVendor": "COSTEL", "firmwareVersion": "V1.1.7" }]
+2024-01-11 17:27:31.925  INFO 7524 --- [https-jsse-nio-5000-exec-9] k.d.e.o.service.MessageForwardService    : chargerId =COSTEL
+2024-01-11 17:27:31.980  INFO 7524 --- [https-jsse-nio-5000-exec-9] k.d.e.o.service.MessageForwardService    : BootNotification result={"currentTime":"2024-01-11T08:27:31.938+00:00","interval":120,"status":"Accepted"}
+2024-01-11 17:27:32.045  INFO 7524 --- [https-jsse-nio-5000-exec-9] k.d.ecos.ocpp.service.MessageLogService  : Charger=SIG00000101, Message=[3,"1",{"currentTime":"2024-01-11T08:27:31.938Z","interval":120,"status":"Accepted"}]
+2024-01-11 17:27:32.094  INFO 7524 --- [https-jsse-nio-5000-exec-9] k.d.ecos.ocpp.service.MessageLogService  : Charger=SIG00000101, Message=[2, "8182", "DataTransfer", { "data": "{\"timestamp\":\"2023-03-16T10:42:24Z\",\"idTag\":\"63037\"}", "messageId": "getPrice1", "vendorId": "VENID" }]
+2024-01-11 17:27:32.132  INFO 7524 --- [https-jsse-nio-5000-exec-9] k.d.e.ocpp.service.DataTransferService   : Data Transfer Request Data={"timestamp":"2023-03-16T10:42:24Z","idTag":"63037"}
+2024-01-11 17:27:32.230  INFO 7524 --- [https-jsse-nio-5000-exec-9] k.d.ecos.ocpp.service.MessageLogService  : Charger=SIG00000101, Message=[3,"8182",{"status":"Accepted","data":"{\"timestamp\":\"2023-03-16T10:42:24.000+00:00\",\"idTag\":\"63037\",\"unitPrice\":[]}"}]
+2024-01-11 17:28:57.761  INFO 7524 --- [https-jsse-nio-5000-exec-10] k.d.e.w.h.AbstractWebSocketEndpoint      : [SIG00000101] is Disconnected!
+2024-01-11 17:28:57.764  INFO 7524 --- [https-jsse-nio-5000-exec-10] k.d.e.w.h.AbstractWebSocketEndpoint      : [SIG00000101] is Disconnected!
+2024-01-11 17:28:57.782  INFO 7524 --- [https-jsse-nio-5000-exec-6] k.dbinc.ecos.config.SecurityInterceptor  : Connect Try Charger URI=https://10.10.36.51:5000/v2/SIG00000101, findLevel=2
+2024-01-11 17:28:57.784  INFO 7524 --- [https-jsse-nio-5000-exec-6] k.d.ecos.ocpp.service.SecurityService    : username=SIG00000101, password=costeltest1@3, chargePointId=SIG00000101
+2024-01-11 17:28:57.785  INFO 7524 --- [https-jsse-nio-5000-exec-6] k.d.ecos.ocpp.service.SecurityService    : requestPassword=costeltest1@3, findPassword=costeltest1@3
+2024-01-11 17:28:57.788  INFO 7524 --- [https-jsse-nio-5000-exec-6] k.d.e.w.h.AbstractWebSocketEndpoint      : [SIG00000101] is Connected!
+2024-01-11 17:28:57.811  INFO 7524 --- [https-jsse-nio-5000-exec-10] kr.dbinc.ecos.session.ChargePointStore   : 세션 아이디가 일치하지 않습니다. prev=3a9e0783-f3cc-e91f-6ac8-031f47594604, cur =8f4c62cf-d01e-4fed-b6f0-e2178a606902
+2024-01-11 17:28:57.864  INFO 7524 --- [https-jsse-nio-5000-exec-6] k.d.ecos.ocpp.service.MessageLogService  : Charger=SIG00000101, Message=[2, "1", "BootNotification", { "chargeBoxSerialNumber": "02", "chargePointModel": "CEC-2303HC1", "chargePointSerialNumber": "F0:8B:FE:0F:00:00", "chargePointVendor": "COSTEL", "firmwareVersion": "V1.1.7" }]
+2024-01-11 17:28:57.903  INFO 7524 --- [https-jsse-nio-5000-exec-6] k.d.e.o.service.MessageForwardService    : chargerId =COSTEL
+2024-01-11 17:28:57.970  INFO 7524 --- [https-jsse-nio-5000-exec-6] k.d.e.o.service.MessageForwardService    : BootNotification result={"currentTime":"2024-01-11T08:28:57.921+00:00","interval":120,"status":"Accepted"}
+2024-01-11 17:28:58.048  INFO 7524 --- [https-jsse-nio-5000-exec-6] k.d.ecos.ocpp.service.MessageLogService  : Charger=SIG00000101, Message=[3,"1",{"currentTime":"2024-01-11T08:28:57.921Z","interval":120,"status":"Accepted"}]
+2024-01-11 17:28:58.100  INFO 7524 --- [https-jsse-nio-5000-exec-6] k.d.ecos.ocpp.service.MessageLogService  : Charger=SIG00000101, Message=[2, "4", "DataTransfer", { "data": "{\"connectorId\":1}", "messageId": "PayInfo", "vendorId": "kr.co.bluenetworks"
+, "timestamp": "2023-03-16T10:42:24Z" 
+, "pgTransactionNum": "cjlogis01m01032107291240321639"
+, "payId": "0997052604"
+, "approvalNum": "56840055"
+, "transactionDate": "20231115"
+, "transactionTime": "124032"
+, "authAmount": "3000"
+, "cardNum": "0000553208******9191"
+}]
+2024-01-11 17:28:58.145  INFO 7524 --- [https-jsse-nio-5000-exec-6] k.d.e.ocpp.service.DataTransferService   : Data Transfer Request Data={"connectorId":1}
+2024-01-11 17:28:58.157 ERROR 7524 --- [https-jsse-nio-5000-exec-6] k.d.e.w.handler.Ocpp16WebSocketEndpoint  : null
+
+kr.dbinc.ecos.ocpp.rpc.exception.NotSupportedException: null
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403) ~[na:na]
+	at kr.dbinc.ecos.ocpp.service.DataTransferService.dataTransfer(DataTransferService.java:35) ~[main/:na]
+	at kr.dbinc.ecos.ocpp.profile.Ocpp16ServiceImpl.dataTransfer(Ocpp16ServiceImpl.java:134) ~[main/:na]
+	at kr.dbinc.ecos.ocpp.profile.Ocpp16ServiceImpl$$FastClassBySpringCGLIB$$4fcff954.invoke(<generated>) ~[main/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793) ~[spring-aop-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763) ~[spring-aop-5.3.22.jar:5.3.22]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.22.jar:5.3.22]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.22.jar:5.3.22]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763) ~[spring-aop-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708) ~[spring-aop-5.3.22.jar:5.3.22]
+	at kr.dbinc.ecos.ocpp.profile.Ocpp16ServiceImpl$$EnhancerBySpringCGLIB$$9139a671.dataTransfer(<generated>) ~[main/:na]
+	at kr.dbinc.ecos.ocpp.rpc.MessageHandlerImpl.dispatch(MessageHandlerImpl.java:89) ~[main/:na]
+	at kr.dbinc.ecos.ocpp.rpc.MessageHandlerImpl.handleMessage(MessageHandlerImpl.java:59) ~[main/:na]
+	at kr.dbinc.ecos.ws.handler.Ocpp16WebSocketEndpoint.handleTextMessage(Ocpp16WebSocketEndpoint.java:69) ~[main/:na]
+	at kr.dbinc.ecos.ws.handler.AbstractWebSocketEndpoint.onMessage(AbstractWebSocketEndpoint.java:28) ~[main/:na]
+	at kr.dbinc.ecos.ws.handler.ConcurrentWebSocketHandler.handleMessage(ConcurrentWebSocketHandler.java:31) ~[main/:na]
+	at org.springframework.web.socket.handler.WebSocketHandlerDecorator.handleMessage(WebSocketHandlerDecorator.java:75) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.handler.LoggingWebSocketHandlerDecorator.handleMessage(LoggingWebSocketHandlerDecorator.java:56) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.handler.ExceptionWebSocketHandlerDecorator.handleMessage(ExceptionWebSocketHandlerDecorator.java:58) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter.handleTextMessage(StandardWebSocketHandlerAdapter.java:114) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter.access$000(StandardWebSocketHandlerAdapter.java:43) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:85) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:82) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.apache.tomcat.websocket.WsFrameBase.sendMessageText(WsFrameBase.java:415) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsFrameServer.sendMessageText(WsFrameServer.java:129) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.WsFrameBase.processDataText(WsFrameBase.java:515) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.WsFrameBase.processData(WsFrameBase.java:301) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:133) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsFrameServer.onDataAvailable(WsFrameServer.java:85) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsFrameServer.doOnDataAvailable(WsFrameServer.java:183) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsFrameServer.notifyDataAvailable(WsFrameServer.java:162) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.upgradeDispatch(WsHttpUpgradeHandler.java:157) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.coyote.http11.upgrade.UpgradeProcessorInternal.dispatch(UpgradeProcessorInternal.java:60) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:59) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2024-01-11 17:28:58.184  INFO 7524 --- [https-jsse-nio-5000-exec-6] k.d.ecos.ocpp.service.MessageLogService  : Charger=SIG00000101, Message=[4," 4","GenericError",null,"{}"]
+2024-01-11 17:28:58.237  INFO 7524 --- [https-jsse-nio-5000-exec-6] k.d.ecos.ocpp.service.MessageLogService  : Charger=SIG00000101, Message=[2, "8182", "DataTransfer", { "data": "{\"timestamp\":\"2023-03-16T10:42:24Z\",\"idTag\":\"63037\"}", "messageId": "getPrice1", "vendorId": "VENID" }]
+2024-01-11 17:28:58.271  INFO 7524 --- [https-jsse-nio-5000-exec-6] k.d.e.ocpp.service.DataTransferService   : Data Transfer Request Data={"timestamp":"2023-03-16T10:42:24Z","idTag":"63037"}
+2024-01-11 17:28:58.345  INFO 7524 --- [https-jsse-nio-5000-exec-6] k.d.ecos.ocpp.service.MessageLogService  : Charger=SIG00000101, Message=[3,"8182",{"status":"Accepted","data":"{\"timestamp\":\"2023-03-16T10:42:24.000+00:00\",\"idTag\":\"63037\",\"unitPrice\":[]}"}]
+2024-01-11 17:29:56.225  INFO 7524 --- [https-jsse-nio-5000-exec-8] k.d.e.w.h.AbstractWebSocketEndpoint      : [SIG00000101] is Disconnected!
+2024-01-11 17:29:56.227  INFO 7524 --- [https-jsse-nio-5000-exec-8] k.d.e.w.h.AbstractWebSocketEndpoint      : [SIG00000101] is Disconnected!
+2024-01-11 17:29:56.275  INFO 7524 --- [https-jsse-nio-5000-exec-7] k.dbinc.ecos.config.SecurityInterceptor  : Connect Try Charger URI=https://10.10.36.51:5000/v2/SIG00000101, findLevel=2
+2024-01-11 17:29:56.275  INFO 7524 --- [https-jsse-nio-5000-exec-7] k.d.ecos.ocpp.service.SecurityService    : username=SIG00000101, password=costeltest1@3, chargePointId=SIG00000101
+2024-01-11 17:29:56.275  INFO 7524 --- [https-jsse-nio-5000-exec-7] k.d.ecos.ocpp.service.SecurityService    : requestPassword=costeltest1@3, findPassword=costeltest1@3
+2024-01-11 17:29:56.277  INFO 7524 --- [https-jsse-nio-5000-exec-7] k.d.e.w.h.AbstractWebSocketEndpoint      : [SIG00000101] is Connected!
+2024-01-11 17:29:56.279  INFO 7524 --- [https-jsse-nio-5000-exec-8] kr.dbinc.ecos.session.ChargePointStore   : 세션 아이디가 일치하지 않습니다. prev=06a95ac1-9012-d600-5def-a12275648cbb, cur =3a9e0783-f3cc-e91f-6ac8-031f47594604
+2024-01-11 17:29:56.358  INFO 7524 --- [https-jsse-nio-5000-exec-7] k.d.ecos.ocpp.service.MessageLogService  : Charger=SIG00000101, Message=[2, "1", "BootNotification", { "chargeBoxSerialNumber": "02", "chargePointModel": "CEC-2303HC1", "chargePointSerialNumber": "F0:8B:FE:0F:00:00", "chargePointVendor": "COSTEL", "firmwareVersion": "V1.1.7" }]
+2024-01-11 17:29:56.400  INFO 7524 --- [https-jsse-nio-5000-exec-7] k.d.e.o.service.MessageForwardService    : chargerId =COSTEL
+2024-01-11 17:29:56.439  INFO 7524 --- [https-jsse-nio-5000-exec-7] k.d.e.o.service.MessageForwardService    : BootNotification result={"currentTime":"2024-01-11T08:29:56.409+00:00","interval":120,"status":"Accepted"}
+2024-01-11 17:29:56.498  INFO 7524 --- [https-jsse-nio-5000-exec-7] k.d.ecos.ocpp.service.MessageLogService  : Charger=SIG00000101, Message=[3,"1",{"currentTime":"2024-01-11T08:29:56.409Z","interval":120,"status":"Accepted"}]
+2024-01-11 17:29:56.548  INFO 7524 --- [https-jsse-nio-5000-exec-7] k.d.ecos.ocpp.service.MessageLogService  : Charger=SIG00000101, Message=[2, "8182", "DataTransfer", { "data": "{\"timestamp\":\"2023-03-16T10:42:24Z\",\"idTag\":\"63037\"}", "messageId": "getPrice1", "vendorId": "VENID" }]
+2024-01-11 17:29:56.580  INFO 7524 --- [https-jsse-nio-5000-exec-7] k.d.e.ocpp.service.DataTransferService   : Data Transfer Request Data={"timestamp":"2023-03-16T10:42:24Z","idTag":"63037"}
+2024-01-11 17:29:56.663  INFO 7524 --- [https-jsse-nio-5000-exec-7] k.d.ecos.ocpp.service.MessageLogService  : Charger=SIG00000101, Message=[3,"8182",{"status":"Accepted","data":"{\"timestamp\":\"2023-03-16T10:42:24.000+00:00\",\"idTag\":\"63037\",\"unitPrice\":[]}"}]
+2024-01-11 17:29:56.712  INFO 7524 --- [https-jsse-nio-5000-exec-7] k.d.ecos.ocpp.service.MessageLogService  : Charger=SIG00000101, Message=[2,"16","DataTransfer",{
+	"data":	"{\"authAmount\":19987,\"authDate\":\"20230201\",\"authTime\":\"185703\",\"authNo\":\"34053204\",\"transactionNo\":\"230201185437\",\"orgAuthNo\":\"34053204\",\"orgTransactionNo\":\"230201185437\",\"payResult\":1,\"connectorId\":1,\"transactionId\":491}",
+	"messageId":	"PartialCancel",
+	"vendorId":	"VENID"
+}]
+2024-01-11 17:29:56.749  INFO 7524 --- [https-jsse-nio-5000-exec-7] k.d.e.ocpp.service.DataTransferService   : Data Transfer Request Data={"authAmount":19987,"authDate":"20230201","authTime":"185703","authNo":"34053204","transactionNo":"230201185437","orgAuthNo":"34053204","orgTransactionNo":"230201185437","payResult":1,"connectorId":1,"transactionId":491}
+2024-01-11 17:29:56.877  INFO 7524 --- [https-jsse-nio-5000-exec-7] k.d.ecos.ocpp.service.MessageLogService  : Charger=SIG00000101, Message=[3,"16",{"status":"Accepted","data":"{\"status\":\"Rejected\"}"}]
+2024-01-11 17:33:16.468  INFO 7524 --- [https-jsse-nio-5000-exec-5] k.d.e.w.h.AbstractWebSocketEndpoint      : [SIG00000101] is Disconnected!
+2024-01-11 17:33:16.470  INFO 7524 --- [https-jsse-nio-5000-exec-5] k.d.e.w.h.AbstractWebSocketEndpoint      : [SIG00000101] is Disconnected!
+2024-01-11 17:33:16.472  WARN 7524 --- [https-jsse-nio-5000-exec-5] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.mariadb.jdbc.Connection@6bc6b1d9 ((conn=8429) Connection.setNetworkTimeout cannot be called on a closed connection). Possibly consider using a shorter maxLifetime value.
+2024-01-11 17:33:16.477  WARN 7524 --- [https-jsse-nio-5000-exec-5] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.mariadb.jdbc.Connection@371cc8a6 ((conn=8430) Connection.setNetworkTimeout cannot be called on a closed connection). Possibly consider using a shorter maxLifetime value.
+2024-01-11 17:33:16.482  WARN 7524 --- [https-jsse-nio-5000-exec-5] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.mariadb.jdbc.Connection@6c956814 ((conn=8431) Connection.setNetworkTimeout cannot be called on a closed connection). Possibly consider using a shorter maxLifetime value.
+2024-01-11 17:33:16.485  WARN 7524 --- [https-jsse-nio-5000-exec-5] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.mariadb.jdbc.Connection@32035426 ((conn=8432) Connection.setNetworkTimeout cannot be called on a closed connection). Possibly consider using a shorter maxLifetime value.
+2024-01-11 17:33:16.508  INFO 7524 --- [https-jsse-nio-5000-exec-1] k.dbinc.ecos.config.SecurityInterceptor  : Connect Try Charger URI=https://10.10.36.51:5000/v2/SIG00000101, findLevel=2
+2024-01-11 17:33:16.518  INFO 7524 --- [https-jsse-nio-5000-exec-1] k.d.ecos.ocpp.service.SecurityService    : username=SIG00000101, password=costeltest1@3, chargePointId=SIG00000101
+2024-01-11 17:33:16.519  INFO 7524 --- [https-jsse-nio-5000-exec-1] k.d.ecos.ocpp.service.SecurityService    : requestPassword=costeltest1@3, findPassword=costeltest1@3
+2024-01-11 17:33:16.507  WARN 7524 --- [https-jsse-nio-5000-exec-5] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.mariadb.jdbc.Connection@12f2937b ((conn=8433) Connection.setNetworkTimeout cannot be called on a closed connection). Possibly consider using a shorter maxLifetime value.
+2024-01-11 17:33:16.522  INFO 7524 --- [https-jsse-nio-5000-exec-1] k.d.e.w.h.AbstractWebSocketEndpoint      : [SIG00000101] is Connected!
+2024-01-11 17:33:16.524  WARN 7524 --- [https-jsse-nio-5000-exec-1] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.mariadb.jdbc.Connection@29fd4b15 ((conn=8435) Connection.setNetworkTimeout cannot be called on a closed connection). Possibly consider using a shorter maxLifetime value.
+2024-01-11 17:33:16.524  WARN 7524 --- [https-jsse-nio-5000-exec-5] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.mariadb.jdbc.Connection@437a307b ((conn=8434) Connection.setNetworkTimeout cannot be called on a closed connection). Possibly consider using a shorter maxLifetime value.
+2024-01-11 17:33:16.525  WARN 7524 --- [https-jsse-nio-5000-exec-5] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.mariadb.jdbc.Connection@46835c8 ((conn=8437) Connection.setNetworkTimeout cannot be called on a closed connection). Possibly consider using a shorter maxLifetime value.
+2024-01-11 17:33:16.525  WARN 7524 --- [https-jsse-nio-5000-exec-1] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.mariadb.jdbc.Connection@6795b402 ((conn=8436) Connection.setNetworkTimeout cannot be called on a closed connection). Possibly consider using a shorter maxLifetime value.
+2024-01-11 17:33:16.527  WARN 7524 --- [https-jsse-nio-5000-exec-5] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.mariadb.jdbc.Connection@2c62f307 ((conn=8438) Connection.setNetworkTimeout cannot be called on a closed connection). Possibly consider using a shorter maxLifetime value.
+2024-01-11 17:33:16.642  INFO 7524 --- [https-jsse-nio-5000-exec-5] kr.dbinc.ecos.session.ChargePointStore   : 세션 아이디가 일치하지 않습니다. prev=397d8e21-713b-b925-d44b-4bcd751539ac, cur =06a95ac1-9012-d600-5def-a12275648cbb
+2024-01-11 17:33:16.652  INFO 7524 --- [https-jsse-nio-5000-exec-1] k.d.ecos.ocpp.service.MessageLogService  : Charger=SIG00000101, Message=[2, "1", "BootNotification", { "chargeBoxSerialNumber": "02", "chargePointModel": "CEC-2303HC1", "chargePointSerialNumber": "F0:8B:FE:0F:00:00", "chargePointVendor": "COSTEL", "firmwareVersion": "V1.1.7" }]
+2024-01-11 17:33:16.691  INFO 7524 --- [https-jsse-nio-5000-exec-1] k.d.e.o.service.MessageForwardService    : chargerId =COSTEL
+2024-01-11 17:33:16.729  INFO 7524 --- [https-jsse-nio-5000-exec-1] k.d.e.o.service.MessageForwardService    : BootNotification result={"currentTime":"2024-01-11T08:33:16.704+00:00","interval":120,"status":"Accepted"}
+2024-01-11 17:33:16.795  INFO 7524 --- [https-jsse-nio-5000-exec-1] k.d.ecos.ocpp.service.MessageLogService  : Charger=SIG00000101, Message=[3,"1",{"currentTime":"2024-01-11T08:33:16.704Z","interval":120,"status":"Accepted"}]
+2024-01-11 17:33:16.852  INFO 7524 --- [https-jsse-nio-5000-exec-1] k.d.ecos.ocpp.service.MessageLogService  : Charger=SIG00000101, Message=[2, "4", "DataTransfer", { "data": "{\"connectorId\":1, \"timestamp\": \"2023-03-16T10:42:24Z\" 
+, \"pgTransactionNum\": \"cjlogis01m01032107291240321639\"
+, \"payId\": \"0997052604\"
+, \"approvalNum\": \"56840055\"
+, \"transactionDate\": \"20231115\"
+, \"transactionTime\": \"124032\"
+, \"authAmount\": \"3000\"
+, \"cardNum\": \"0000553208******9191\"}", "messageId": "PayInfo", "vendorId": "kr.co.bluenetworks"}]
+2024-01-11 17:33:16.884 ERROR 7524 --- [https-jsse-nio-5000-exec-1] k.d.ecos.ocpp.rpc.MessageFactoryImpl     : Illegal unquoted character ((CTRL-CHAR, code 10)): has to be escaped using backslash to be included in string value
+ at [Source: (String)"[2, "4", "DataTransfer", { "data": "{\"connectorId\":1, \"timestamp\": \"2023-03-16T10:42:24Z\" 
+, \"pgTransactionNum\": \"cjlogis01m01032107291240321639\"
+, \"payId\": \"0997052604\"
+, \"approvalNum\": \"56840055\"
+, \"transactionDate\": \"20231115\"
+, \"transactionTime\": \"124032\"
+, \"authAmount\": \"3000\"
+, \"cardNum\": \"0000553208******9191\"}", "messageId": "PayInfo", "vendorId": "kr.co.bluenetworks"}]"; line: 1, column: 98] (through reference chain: kr.dbinc.ecos.ocpp.operations.datatransfer.DataTransferRequest["data"])
+
+com.fasterxml.jackson.databind.JsonMappingException: Illegal unquoted character ((CTRL-CHAR, code 10)): has to be escaped using backslash to be included in string value
+ at [Source: (String)"[2, "4", "DataTransfer", { "data": "{\"connectorId\":1, \"timestamp\": \"2023-03-16T10:42:24Z\" 
+, \"pgTransactionNum\": \"cjlogis01m01032107291240321639\"
+, \"payId\": \"0997052604\"
+, \"approvalNum\": \"56840055\"
+, \"transactionDate\": \"20231115\"
+, \"transactionTime\": \"124032\"
+, \"authAmount\": \"3000\"
+, \"cardNum\": \"0000553208******9191\"}", "messageId": "PayInfo", "vendorId": "kr.co.bluenetworks"}]"; line: 1, column: 98] (through reference chain: kr.dbinc.ecos.ocpp.operations.datatransfer.DataTransferRequest["data"])
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:392) ~[jackson-databind-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:351) ~[jackson-databind-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.wrapAndThrow(BeanDeserializerBase.java:1821) ~[jackson-databind-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer._deserializeWithErrorWrapping(BeanDeserializer.java:565) ~[jackson-databind-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer._deserializeUsingPropertyBased(BeanDeserializer.java:438) ~[jackson-databind-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.deserializeFromObjectUsingNonDefault(BeanDeserializerBase.java:1405) ~[jackson-databind-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserializeFromObject(BeanDeserializer.java:351) ~[jackson-databind-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:184) ~[jackson-databind-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:323) ~[jackson-databind-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.databind.ObjectMapper._readValue(ObjectMapper.java:4650) ~[jackson-databind-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:2831) ~[jackson-databind-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.core.JsonParser.readValueAs(JsonParser.java:2277) ~[jackson-core-2.13.3.jar:2.13.3]
+	at kr.dbinc.ecos.ocpp.rpc.CallFactoryImpl.createCall(CallFactoryImpl.java:41) ~[main/:na]
+	at kr.dbinc.ecos.ocpp.rpc.MessageFactoryImpl.createMessage(MessageFactoryImpl.java:29) ~[main/:na]
+	at kr.dbinc.ecos.ws.handler.Ocpp16WebSocketEndpoint.handleTextMessage(Ocpp16WebSocketEndpoint.java:68) ~[main/:na]
+	at kr.dbinc.ecos.ws.handler.AbstractWebSocketEndpoint.onMessage(AbstractWebSocketEndpoint.java:28) ~[main/:na]
+	at kr.dbinc.ecos.ws.handler.ConcurrentWebSocketHandler.handleMessage(ConcurrentWebSocketHandler.java:31) ~[main/:na]
+	at org.springframework.web.socket.handler.WebSocketHandlerDecorator.handleMessage(WebSocketHandlerDecorator.java:75) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.handler.LoggingWebSocketHandlerDecorator.handleMessage(LoggingWebSocketHandlerDecorator.java:56) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.handler.ExceptionWebSocketHandlerDecorator.handleMessage(ExceptionWebSocketHandlerDecorator.java:58) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter.handleTextMessage(StandardWebSocketHandlerAdapter.java:114) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter.access$000(StandardWebSocketHandlerAdapter.java:43) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:85) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:82) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.apache.tomcat.websocket.WsFrameBase.sendMessageText(WsFrameBase.java:415) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsFrameServer.sendMessageText(WsFrameServer.java:129) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.WsFrameBase.processDataText(WsFrameBase.java:515) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.WsFrameBase.processData(WsFrameBase.java:301) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:133) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsFrameServer.onDataAvailable(WsFrameServer.java:85) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsFrameServer.doOnDataAvailable(WsFrameServer.java:183) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsFrameServer.notifyDataAvailable(WsFrameServer.java:162) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.upgradeDispatch(WsHttpUpgradeHandler.java:157) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.coyote.http11.upgrade.UpgradeProcessorInternal.dispatch(UpgradeProcessorInternal.java:60) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:59) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+Caused by: com.fasterxml.jackson.core.JsonParseException: Illegal unquoted character ((CTRL-CHAR, code 10)): has to be escaped using backslash to be included in string value
+ at [Source: (String)"[2, "4", "DataTransfer", { "data": "{\"connectorId\":1, \"timestamp\": \"2023-03-16T10:42:24Z\" 
+, \"pgTransactionNum\": \"cjlogis01m01032107291240321639\"
+, \"payId\": \"0997052604\"
+, \"approvalNum\": \"56840055\"
+, \"transactionDate\": \"20231115\"
+, \"transactionTime\": \"124032\"
+, \"authAmount\": \"3000\"
+, \"cardNum\": \"0000553208******9191\"}", "messageId": "PayInfo", "vendorId": "kr.co.bluenetworks"}]"; line: 1, column: 98]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2391) ~[jackson-core-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:735) ~[jackson-core-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.core.base.ParserBase._throwUnquotedSpace(ParserBase.java:1110) ~[jackson-core-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._finishString2(ReaderBasedJsonParser.java:2155) ~[jackson-core-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._finishString(ReaderBasedJsonParser.java:2126) ~[jackson-core-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.getText(ReaderBasedJsonParser.java:320) ~[jackson-core-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.databind.deser.std.StringDeserializer.deserialize(StringDeserializer.java:41) ~[jackson-databind-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.databind.deser.std.StringDeserializer.deserialize(StringDeserializer.java:11) ~[jackson-databind-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.databind.deser.SettableBeanProperty.deserialize(SettableBeanProperty.java:542) ~[jackson-databind-2.13.3.jar:2.13.3]
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer._deserializeWithErrorWrapping(BeanDeserializer.java:563) ~[jackson-databind-2.13.3.jar:2.13.3]
+	... 38 common frames omitted
+
+2024-01-11 17:33:16.891 ERROR 7524 --- [https-jsse-nio-5000-exec-1] k.d.e.w.handler.Ocpp16WebSocketEndpoint  : Message 처리 중에 에러가 발생했습니다.
+
+kr.dbinc.ecos.ocpp.rpc.exception.InternalErrorException: Message 처리 중에 에러가 발생했습니다.
+	at kr.dbinc.ecos.ocpp.rpc.MessageFactoryImpl.createMessage(MessageFactoryImpl.java:39) ~[main/:na]
+	at kr.dbinc.ecos.ws.handler.Ocpp16WebSocketEndpoint.handleTextMessage(Ocpp16WebSocketEndpoint.java:68) ~[main/:na]
+	at kr.dbinc.ecos.ws.handler.AbstractWebSocketEndpoint.onMessage(AbstractWebSocketEndpoint.java:28) ~[main/:na]
+	at kr.dbinc.ecos.ws.handler.ConcurrentWebSocketHandler.handleMessage(ConcurrentWebSocketHandler.java:31) ~[main/:na]
+	at org.springframework.web.socket.handler.WebSocketHandlerDecorator.handleMessage(WebSocketHandlerDecorator.java:75) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.handler.LoggingWebSocketHandlerDecorator.handleMessage(LoggingWebSocketHandlerDecorator.java:56) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.handler.ExceptionWebSocketHandlerDecorator.handleMessage(ExceptionWebSocketHandlerDecorator.java:58) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter.handleTextMessage(StandardWebSocketHandlerAdapter.java:114) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter.access$000(StandardWebSocketHandlerAdapter.java:43) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:85) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:82) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.apache.tomcat.websocket.WsFrameBase.sendMessageText(WsFrameBase.java:415) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsFrameServer.sendMessageText(WsFrameServer.java:129) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.WsFrameBase.processDataText(WsFrameBase.java:515) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.WsFrameBase.processData(WsFrameBase.java:301) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:133) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsFrameServer.onDataAvailable(WsFrameServer.java:85) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsFrameServer.doOnDataAvailable(WsFrameServer.java:183) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsFrameServer.notifyDataAvailable(WsFrameServer.java:162) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.upgradeDispatch(WsHttpUpgradeHandler.java:157) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.coyote.http11.upgrade.UpgradeProcessorInternal.dispatch(UpgradeProcessorInternal.java:60) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:59) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2024-01-11 17:33:16.915  INFO 7524 --- [https-jsse-nio-5000-exec-1] k.d.ecos.ocpp.service.MessageLogService  : Charger=SIG00000101, Message=[4," 4","InternalError","Message 처리 중에 에러가 발생했습니다.","{}"]
+2024-01-11 17:33:16.961  INFO 7524 --- [https-jsse-nio-5000-exec-1] k.d.ecos.ocpp.service.MessageLogService  : Charger=SIG00000101, Message=[2, "8182", "DataTransfer", { "data": "{\"timestamp\":\"2023-03-16T10:42:24Z\",\"idTag\":\"63037\"}", "messageId": "getPrice1", "vendorId": "VENID" }]
+2024-01-11 17:33:16.992  INFO 7524 --- [https-jsse-nio-5000-exec-1] k.d.e.ocpp.service.DataTransferService   : Data Transfer Request Data={"timestamp":"2023-03-16T10:42:24Z","idTag":"63037"}
+2024-01-11 17:33:17.063  INFO 7524 --- [https-jsse-nio-5000-exec-1] k.d.ecos.ocpp.service.MessageLogService  : Charger=SIG00000101, Message=[3,"8182",{"status":"Accepted","data":"{\"timestamp\":\"2023-03-16T10:42:24.000+00:00\",\"idTag\":\"63037\",\"unitPrice\":[]}"}]
+2024-01-11 17:33:17.106  INFO 7524 --- [https-jsse-nio-5000-exec-1] k.d.ecos.ocpp.service.MessageLogService  : Charger=SIG00000101, Message=[2,"16","DataTransfer",{
+	"data":	"{\"authAmount\":19987,\"authDate\":\"20230201\",\"authTime\":\"185703\",\"authNo\":\"34053204\",\"transactionNo\":\"230201185437\",\"orgAuthNo\":\"34053204\",\"orgTransactionNo\":\"230201185437\",\"payResult\":1,\"connectorId\":1,\"transactionId\":491}",
+	"messageId":	"PartialCancel",
+	"vendorId":	"VENID"
+}]
+2024-01-11 17:33:17.138  INFO 7524 --- [https-jsse-nio-5000-exec-1] k.d.e.ocpp.service.DataTransferService   : Data Transfer Request Data={"authAmount":19987,"authDate":"20230201","authTime":"185703","authNo":"34053204","transactionNo":"230201185437","orgAuthNo":"34053204","orgTransactionNo":"230201185437","payResult":1,"connectorId":1,"transactionId":491}
+2024-01-11 17:33:17.209  INFO 7524 --- [https-jsse-nio-5000-exec-1] k.d.ecos.ocpp.service.MessageLogService  : Charger=SIG00000101, Message=[3,"16",{"status":"Accepted","data":"{\"status\":\"Rejected\"}"}]
+2024-01-11 17:37:58.586  INFO 15744 --- [main] kr.dbinc.ecos.OcppForJavaApplication     : Starting OcppForJavaApplication using Java 17.0.7 on DESKTOP-OBR6GFG with PID 15744 (D:\StsWorkspace\ecos-ocpp-server\bin\main started by Jerad in D:\StsWorkspace\ecos-ocpp-server)
+2024-01-11 17:37:58.592  INFO 15744 --- [main] kr.dbinc.ecos.OcppForJavaApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-01-11 17:37:59.788  INFO 15744 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-11 17:38:00.153  INFO 15744 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 356 ms. Found 23 JPA repository interfaces.
+2024-01-11 17:38:00.664  INFO 15744 --- [main] kr.dbinc.ecos.config.ConnectorConfig     : HTTP port setup to 9999
+2024-01-11 17:38:00.882  INFO 15744 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 5000 (https) 9999 (http)
+2024-01-11 17:38:00.898  INFO 15744 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-11 17:38:00.898  INFO 15744 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2024-01-11 17:38:01.070  INFO 15744 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-11 17:38:01.070  INFO 15744 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2398 ms
+2024-01-11 17:38:01.522  INFO 15744 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-11 17:38:01.600  INFO 15744 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2024-01-11 17:38:01.815  INFO 15744 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-01-11 17:38:02.009  INFO 15744 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-11 17:38:02.182  INFO 15744 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-11 17:38:02.211  INFO 15744 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2024-01-11 17:38:02.486  WARN 15744 --- [main] org.hibernate.cfg.AnnotationBinder       : HHH000457: Joined inheritance hierarchy [kr.dbinc.ecos.domain.member.Authorization] defined explicit @DiscriminatorColumn.  Legacy Hibernate behavior was to ignore the @DiscriminatorColumn.  However, as part of issue HHH-6911 we now apply the explicit @DiscriminatorColumn.  If you would prefer the legacy behavior, enable the `hibernate.discriminator.ignore_explicit_for_joined` setting (hibernate.discriminator.ignore_explicit_for_joined=true)
+2024-01-11 17:38:03.024  INFO 15744 --- [main] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: kr.dbinc.ecos.domain.security.SecurityLog (class must be instantiated by Interceptor)
+2024-01-11 17:38:03.230  INFO 15744 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-01-11 17:38:03.241  INFO 15744 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-11 17:38:04.630  INFO 15744 --- [main] org.reflections.Reflections              : Reflections took 188 ms to scan 1 urls, producing 70 keys and 404 values
+2024-01-11 17:38:04.797  INFO 15744 --- [main] org.reflections.Reflections              : Reflections took 140 ms to scan 1 urls, producing 70 keys and 404 values
+2024-01-11 17:38:04.908  INFO 15744 --- [main] org.reflections.Reflections              : Reflections took 108 ms to scan 1 urls, producing 70 keys and 404 values
+2024-01-11 17:38:04.976  INFO 15744 --- [main] kr.dbinc.ecos.config.SchedulerConfig     : datSource=HikariDataSource (HikariPool-1)
+2024-01-11 17:38:05.334  INFO 15744 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2024-01-11 17:38:06.476  INFO 15744 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-01-11 17:38:06.852  INFO 15744 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 5000 (https) 9999 (http) with context path ''
+2024-01-11 17:38:06.869  INFO 15744 --- [main] kr.dbinc.ecos.OcppForJavaApplication     : Started OcppForJavaApplication in 8.683 seconds (JVM running for 9.372)
+2024-01-11 17:38:07.666  INFO 15744 --- [RMI TCP Connection(1)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-11 17:38:07.666  INFO 15744 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-11 17:38:07.668  INFO 15744 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-01-11 17:38:11.728  INFO 15744 --- [https-jsse-nio-5000-exec-7] k.dbinc.ecos.config.SecurityInterceptor  : Connect Try Charger URI=https://10.10.36.51:5000/v2/SIG00000101, findLevel=2
+2024-01-11 17:38:11.729  INFO 15744 --- [https-jsse-nio-5000-exec-7] k.d.ecos.ocpp.service.SecurityService    : username=SIG00000101, password=costeltest1@3, chargePointId=SIG00000101
+2024-01-11 17:38:11.730  INFO 15744 --- [https-jsse-nio-5000-exec-7] k.d.ecos.ocpp.service.SecurityService    : requestPassword=costeltest1@3, findPassword=costeltest1@3
+2024-01-11 17:38:11.777  INFO 15744 --- [https-jsse-nio-5000-exec-7] k.d.e.w.h.AbstractWebSocketEndpoint      : [SIG00000101] is Connected!
+2024-01-11 17:38:12.029  INFO 15744 --- [https-jsse-nio-5000-exec-7] k.d.ecos.ocpp.service.MessageLogService  : Charger=SIG00000101, Message=[2, "1", "BootNotification", { "chargeBoxSerialNumber": "02", "chargePointModel": "CEC-2303HC1", "chargePointSerialNumber": "F0:8B:FE:0F:00:00", "chargePointVendor": "COSTEL", "firmwareVersion": "V1.1.7" }]
+2024-01-11 17:38:12.150  INFO 15744 --- [https-jsse-nio-5000-exec-7] k.d.e.o.service.MessageForwardService    : chargerId =COSTEL
+2024-01-11 17:38:12.697  INFO 15744 --- [https-jsse-nio-5000-exec-7] k.d.e.o.service.MessageForwardService    : BootNotification result={"currentTime":"2024-01-11T08:38:12.643+00:00","interval":120,"status":"Accepted"}
+2024-01-11 17:38:12.822  INFO 15744 --- [https-jsse-nio-5000-exec-7] k.d.ecos.ocpp.service.MessageLogService  : Charger=SIG00000101, Message=[3,"1",{"currentTime":"2024-01-11T08:38:12.643Z","interval":120,"status":"Accepted"}]
+2024-01-11 17:38:12.876  INFO 15744 --- [https-jsse-nio-5000-exec-7] k.d.ecos.ocpp.service.MessageLogService  : Charger=SIG00000101, Message=[2, "4", "DataTransfer", { "data": "{\"connectorId\":1, \"timestamp\": \"2023-03-16T10:42:24Z\" , \"pgTransactionNum\": \"cjlogis01m01032107291240321639\", \"payId\": \"0997052604\",\"approvalNum\":\"56840055\",\"transactionDate\": \"20231115\", \"transactionTime\": \"124032\", \"authAmount\": \"3000\", \"cardNum\": \"0000553208******9191\"}", "messageId": "PayInfo", "vendorId":"kr.co.bluenetworks"}]
+2024-01-11 17:38:12.912  INFO 15744 --- [https-jsse-nio-5000-exec-7] k.d.e.ocpp.service.DataTransferService   : Data Transfer Request Data={"connectorId":1, "timestamp": "2023-03-16T10:42:24Z" , "pgTransactionNum": "cjlogis01m01032107291240321639", "payId": "0997052604","approvalNum":"56840055","transactionDate": "20231115", "transactionTime": "124032", "authAmount": "3000", "cardNum": "0000553208******9191"}
+2024-01-11 17:38:12.927 ERROR 15744 --- [https-jsse-nio-5000-exec-7] k.d.e.w.handler.Ocpp16WebSocketEndpoint  : null
+
+kr.dbinc.ecos.ocpp.rpc.exception.NotSupportedException: null
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403) ~[na:na]
+	at kr.dbinc.ecos.ocpp.service.DataTransferService.dataTransfer(DataTransferService.java:35) ~[main/:na]
+	at kr.dbinc.ecos.ocpp.profile.Ocpp16ServiceImpl.dataTransfer(Ocpp16ServiceImpl.java:134) ~[main/:na]
+	at kr.dbinc.ecos.ocpp.profile.Ocpp16ServiceImpl$$FastClassBySpringCGLIB$$4fcff954.invoke(<generated>) ~[main/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793) ~[spring-aop-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763) ~[spring-aop-5.3.22.jar:5.3.22]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.22.jar:5.3.22]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.22.jar:5.3.22]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763) ~[spring-aop-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708) ~[spring-aop-5.3.22.jar:5.3.22]
+	at kr.dbinc.ecos.ocpp.profile.Ocpp16ServiceImpl$$EnhancerBySpringCGLIB$$e7d247c.dataTransfer(<generated>) ~[main/:na]
+	at kr.dbinc.ecos.ocpp.rpc.MessageHandlerImpl.dispatch(MessageHandlerImpl.java:89) ~[main/:na]
+	at kr.dbinc.ecos.ocpp.rpc.MessageHandlerImpl.handleMessage(MessageHandlerImpl.java:59) ~[main/:na]
+	at kr.dbinc.ecos.ws.handler.Ocpp16WebSocketEndpoint.handleTextMessage(Ocpp16WebSocketEndpoint.java:69) ~[main/:na]
+	at kr.dbinc.ecos.ws.handler.AbstractWebSocketEndpoint.onMessage(AbstractWebSocketEndpoint.java:28) ~[main/:na]
+	at kr.dbinc.ecos.ws.handler.ConcurrentWebSocketHandler.handleMessage(ConcurrentWebSocketHandler.java:31) ~[main/:na]
+	at org.springframework.web.socket.handler.WebSocketHandlerDecorator.handleMessage(WebSocketHandlerDecorator.java:75) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.handler.LoggingWebSocketHandlerDecorator.handleMessage(LoggingWebSocketHandlerDecorator.java:56) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.handler.ExceptionWebSocketHandlerDecorator.handleMessage(ExceptionWebSocketHandlerDecorator.java:58) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter.handleTextMessage(StandardWebSocketHandlerAdapter.java:114) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter.access$000(StandardWebSocketHandlerAdapter.java:43) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:85) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:82) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.apache.tomcat.websocket.WsFrameBase.sendMessageText(WsFrameBase.java:415) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsFrameServer.sendMessageText(WsFrameServer.java:129) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.WsFrameBase.processDataText(WsFrameBase.java:515) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.WsFrameBase.processData(WsFrameBase.java:301) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:133) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsFrameServer.onDataAvailable(WsFrameServer.java:85) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsFrameServer.doOnDataAvailable(WsFrameServer.java:183) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsFrameServer.notifyDataAvailable(WsFrameServer.java:162) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.upgradeDispatch(WsHttpUpgradeHandler.java:157) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.coyote.http11.upgrade.UpgradeProcessorInternal.dispatch(UpgradeProcessorInternal.java:60) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:59) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2024-01-11 17:38:12.952  INFO 15744 --- [https-jsse-nio-5000-exec-7] k.d.ecos.ocpp.service.MessageLogService  : Charger=SIG00000101, Message=[4," 4","GenericError",null,"{}"]
+2024-01-11 17:38:13.000  INFO 15744 --- [https-jsse-nio-5000-exec-7] k.d.ecos.ocpp.service.MessageLogService  : Charger=SIG00000101, Message=[2, "8182", "DataTransfer", { "data": "{\"timestamp\":\"2023-03-16T10:42:24Z\",\"idTag\":\"63037\"}", "messageId": "getPrice1", "vendorId": "VENID" }]
+2024-01-11 17:38:13.034  INFO 15744 --- [https-jsse-nio-5000-exec-7] k.d.e.ocpp.service.DataTransferService   : Data Transfer Request Data={"timestamp":"2023-03-16T10:42:24Z","idTag":"63037"}
+2024-01-11 17:38:13.140  INFO 15744 --- [https-jsse-nio-5000-exec-7] k.d.ecos.ocpp.service.MessageLogService  : Charger=SIG00000101, Message=[3,"8182",{"status":"Accepted","data":"{\"timestamp\":\"2023-03-16T10:42:24.000+00:00\",\"idTag\":\"63037\",\"unitPrice\":[]}"}]
+2024-01-11 17:38:13.192  INFO 15744 --- [https-jsse-nio-5000-exec-7] k.d.ecos.ocpp.service.MessageLogService  : Charger=SIG00000101, Message=[2,"16","DataTransfer",{
+	"data":	"{\"authAmount\":19987,\"authDate\":\"20230201\",\"authTime\":\"185703\",\"authNo\":\"34053204\",\"transactionNo\":\"230201185437\",\"orgAuthNo\":\"34053204\",\"orgTransactionNo\":\"230201185437\",\"payResult\":1,\"connectorId\":1,\"transactionId\":491}",
+	"messageId":	"PartialCancel",
+	"vendorId":	"VENID"
+}]
+2024-01-11 17:38:13.233  INFO 15744 --- [https-jsse-nio-5000-exec-7] k.d.e.ocpp.service.DataTransferService   : Data Transfer Request Data={"authAmount":19987,"authDate":"20230201","authTime":"185703","authNo":"34053204","transactionNo":"230201185437","orgAuthNo":"34053204","orgTransactionNo":"230201185437","payResult":1,"connectorId":1,"transactionId":491}
+2024-01-11 17:38:13.324  INFO 15744 --- [https-jsse-nio-5000-exec-7] k.d.ecos.ocpp.service.MessageLogService  : Charger=SIG00000101, Message=[3,"16",{"status":"Accepted","data":"{\"status\":\"Rejected\"}"}]
+2024-01-11 17:38:57.202  INFO 15744 --- [https-jsse-nio-5000-exec-6] k.d.e.w.h.AbstractWebSocketEndpoint      : [SIG00000101] is Disconnected!
+2024-01-11 17:38:57.204  INFO 15744 --- [https-jsse-nio-5000-exec-6] k.d.e.w.h.AbstractWebSocketEndpoint      : [SIG00000101] is Disconnected!
+2024-01-11 17:38:57.258  INFO 15744 --- [https-jsse-nio-5000-exec-2] k.dbinc.ecos.config.SecurityInterceptor  : Connect Try Charger URI=https://10.10.36.51:5000/v2/SIG00000101, findLevel=2
+2024-01-11 17:38:57.260  INFO 15744 --- [https-jsse-nio-5000-exec-2] k.d.ecos.ocpp.service.SecurityService    : username=SIG00000101, password=costeltest1@3, chargePointId=SIG00000101
+2024-01-11 17:38:57.262  INFO 15744 --- [https-jsse-nio-5000-exec-2] k.d.ecos.ocpp.service.SecurityService    : requestPassword=costeltest1@3, findPassword=costeltest1@3
+2024-01-11 17:38:57.271  INFO 15744 --- [https-jsse-nio-5000-exec-2] k.d.e.w.h.AbstractWebSocketEndpoint      : [SIG00000101] is Connected!
+2024-01-11 17:38:57.276  INFO 15744 --- [https-jsse-nio-5000-exec-6] kr.dbinc.ecos.session.ChargePointStore   : 세션 아이디가 일치하지 않습니다. prev=7aebe101-bb73-1be9-f28e-fe8bf90bcee2, cur =bdfc0b60-2a7c-390d-1fb2-955eabdddeb4
+2024-01-11 17:38:57.358  INFO 15744 --- [https-jsse-nio-5000-exec-2] k.d.ecos.ocpp.service.MessageLogService  : Charger=SIG00000101, Message=[2, "1", "BootNotification", { "chargeBoxSerialNumber": "02", "chargePointModel": "CEC-2303HC1", "chargePointSerialNumber": "F0:8B:FE:0F:00:00", "chargePointVendor": "COSTEL", "firmwareVersion": "V1.1.7" }]
+2024-01-11 17:38:57.393  INFO 15744 --- [https-jsse-nio-5000-exec-2] k.d.e.o.service.MessageForwardService    : chargerId =COSTEL
+2024-01-11 17:38:57.411  INFO 15744 --- [https-jsse-nio-5000-exec-2] k.d.e.o.service.MessageForwardService    : BootNotification result={"currentTime":"2024-01-11T08:38:57.397+00:00","interval":120,"status":"Accepted"}
+2024-01-11 17:38:57.479  INFO 15744 --- [https-jsse-nio-5000-exec-2] k.d.ecos.ocpp.service.MessageLogService  : Charger=SIG00000101, Message=[3,"1",{"currentTime":"2024-01-11T08:38:57.397Z","interval":120,"status":"Accepted"}]
+2024-01-11 17:38:57.532  INFO 15744 --- [https-jsse-nio-5000-exec-2] k.d.ecos.ocpp.service.MessageLogService  : Charger=SIG00000101, Message=[2, "4", "DataTransfer", { "data": "{\"connectorId\":1, \"timestamp\": \"2023-03-16T10:42:24Z\" , \"pgTransactionNum\": \"cjlogis01m01032107291240321639\", \"payId\": \"0997052604\",\"approvalNum\":\"56840055\",\"transactionDate\": \"20231115\", \"transactionTime\": \"124032\", \"authAmount\": \"3000\", \"cardNum\": \"0000553208******9191\"}", "messageId": "getPrice", "vendorId":"kr.co.bluenetworks"}]
+2024-01-11 17:38:57.570  INFO 15744 --- [https-jsse-nio-5000-exec-2] k.d.e.ocpp.service.DataTransferService   : Data Transfer Request Data={"connectorId":1, "timestamp": "2023-03-16T10:42:24Z" , "pgTransactionNum": "cjlogis01m01032107291240321639", "payId": "0997052604","approvalNum":"56840055","transactionDate": "20231115", "transactionTime": "124032", "authAmount": "3000", "cardNum": "0000553208******9191"}
+2024-01-11 17:38:57.588 ERROR 15744 --- [https-jsse-nio-5000-exec-2] k.d.e.w.handler.Ocpp16WebSocketEndpoint  : null
+
+kr.dbinc.ecos.ocpp.rpc.exception.NotSupportedException: null
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403) ~[na:na]
+	at kr.dbinc.ecos.ocpp.service.DataTransferService.dataTransfer(DataTransferService.java:35) ~[main/:na]
+	at kr.dbinc.ecos.ocpp.profile.Ocpp16ServiceImpl.dataTransfer(Ocpp16ServiceImpl.java:134) ~[main/:na]
+	at kr.dbinc.ecos.ocpp.profile.Ocpp16ServiceImpl$$FastClassBySpringCGLIB$$4fcff954.invoke(<generated>) ~[main/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793) ~[spring-aop-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763) ~[spring-aop-5.3.22.jar:5.3.22]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.22.jar:5.3.22]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.22.jar:5.3.22]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763) ~[spring-aop-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708) ~[spring-aop-5.3.22.jar:5.3.22]
+	at kr.dbinc.ecos.ocpp.profile.Ocpp16ServiceImpl$$EnhancerBySpringCGLIB$$e7d247c.dataTransfer(<generated>) ~[main/:na]
+	at kr.dbinc.ecos.ocpp.rpc.MessageHandlerImpl.dispatch(MessageHandlerImpl.java:89) ~[main/:na]
+	at kr.dbinc.ecos.ocpp.rpc.MessageHandlerImpl.handleMessage(MessageHandlerImpl.java:59) ~[main/:na]
+	at kr.dbinc.ecos.ws.handler.Ocpp16WebSocketEndpoint.handleTextMessage(Ocpp16WebSocketEndpoint.java:69) ~[main/:na]
+	at kr.dbinc.ecos.ws.handler.AbstractWebSocketEndpoint.onMessage(AbstractWebSocketEndpoint.java:28) ~[main/:na]
+	at kr.dbinc.ecos.ws.handler.ConcurrentWebSocketHandler.handleMessage(ConcurrentWebSocketHandler.java:31) ~[main/:na]
+	at org.springframework.web.socket.handler.WebSocketHandlerDecorator.handleMessage(WebSocketHandlerDecorator.java:75) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.handler.LoggingWebSocketHandlerDecorator.handleMessage(LoggingWebSocketHandlerDecorator.java:56) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.handler.ExceptionWebSocketHandlerDecorator.handleMessage(ExceptionWebSocketHandlerDecorator.java:58) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter.handleTextMessage(StandardWebSocketHandlerAdapter.java:114) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter.access$000(StandardWebSocketHandlerAdapter.java:43) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:85) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:82) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.apache.tomcat.websocket.WsFrameBase.sendMessageText(WsFrameBase.java:415) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsFrameServer.sendMessageText(WsFrameServer.java:129) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.WsFrameBase.processDataText(WsFrameBase.java:515) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.WsFrameBase.processData(WsFrameBase.java:301) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:133) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsFrameServer.onDataAvailable(WsFrameServer.java:85) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsFrameServer.doOnDataAvailable(WsFrameServer.java:183) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsFrameServer.notifyDataAvailable(WsFrameServer.java:162) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.upgradeDispatch(WsHttpUpgradeHandler.java:157) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.coyote.http11.upgrade.UpgradeProcessorInternal.dispatch(UpgradeProcessorInternal.java:60) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:59) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2024-01-11 17:38:57.612  INFO 15744 --- [https-jsse-nio-5000-exec-2] k.d.ecos.ocpp.service.MessageLogService  : Charger=SIG00000101, Message=[4," 4","GenericError",null,"{}"]
+2024-01-11 17:38:57.664  INFO 15744 --- [https-jsse-nio-5000-exec-2] k.d.ecos.ocpp.service.MessageLogService  : Charger=SIG00000101, Message=[2, "8182", "DataTransfer", { "data": "{\"timestamp\":\"2023-03-16T10:42:24Z\",\"idTag\":\"63037\"}", "messageId": "getPrice1", "vendorId": "VENID" }]
+2024-01-11 17:38:57.696  INFO 15744 --- [https-jsse-nio-5000-exec-2] k.d.e.ocpp.service.DataTransferService   : Data Transfer Request Data={"timestamp":"2023-03-16T10:42:24Z","idTag":"63037"}
+2024-01-11 17:38:57.760  INFO 15744 --- [https-jsse-nio-5000-exec-2] k.d.ecos.ocpp.service.MessageLogService  : Charger=SIG00000101, Message=[3,"8182",{"status":"Accepted","data":"{\"timestamp\":\"2023-03-16T10:42:24.000+00:00\",\"idTag\":\"63037\",\"unitPrice\":[]}"}]
+2024-01-11 17:38:57.806  INFO 15744 --- [https-jsse-nio-5000-exec-2] k.d.ecos.ocpp.service.MessageLogService  : Charger=SIG00000101, Message=[2,"16","DataTransfer",{
+	"data":	"{\"authAmount\":19987,\"authDate\":\"20230201\",\"authTime\":\"185703\",\"authNo\":\"34053204\",\"transactionNo\":\"230201185437\",\"orgAuthNo\":\"34053204\",\"orgTransactionNo\":\"230201185437\",\"payResult\":1,\"connectorId\":1,\"transactionId\":491}",
+	"messageId":	"PartialCancel",
+	"vendorId":	"VENID"
+}]
+2024-01-11 17:38:57.843  INFO 15744 --- [https-jsse-nio-5000-exec-2] k.d.e.ocpp.service.DataTransferService   : Data Transfer Request Data={"authAmount":19987,"authDate":"20230201","authTime":"185703","authNo":"34053204","transactionNo":"230201185437","orgAuthNo":"34053204","orgTransactionNo":"230201185437","payResult":1,"connectorId":1,"transactionId":491}
+2024-01-11 17:38:57.930  INFO 15744 --- [https-jsse-nio-5000-exec-2] k.d.ecos.ocpp.service.MessageLogService  : Charger=SIG00000101, Message=[3,"16",{"status":"Accepted","data":"{\"status\":\"Rejected\"}"}]
+2024-01-11 17:46:27.401  INFO 15744 --- [https-jsse-nio-5000-exec-3] k.d.e.w.h.AbstractWebSocketEndpoint      : [SIG00000101] is Disconnected!
+2024-01-11 17:46:27.404  INFO 15744 --- [https-jsse-nio-5000-exec-3] k.d.e.w.h.AbstractWebSocketEndpoint      : [SIG00000101] is Disconnected!
+2024-01-11 17:46:27.406  WARN 15744 --- [https-jsse-nio-5000-exec-3] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.mariadb.jdbc.Connection@56929672 ((conn=8469) Connection.setNetworkTimeout cannot be called on a closed connection). Possibly consider using a shorter maxLifetime value.
+2024-01-11 17:46:27.409  WARN 15744 --- [https-jsse-nio-5000-exec-3] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.mariadb.jdbc.Connection@2400875e ((conn=8470) Connection.setNetworkTimeout cannot be called on a closed connection). Possibly consider using a shorter maxLifetime value.
+2024-01-11 17:46:27.420  WARN 15744 --- [https-jsse-nio-5000-exec-3] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.mariadb.jdbc.Connection@6663b4aa ((conn=8471) Connection.setNetworkTimeout cannot be called on a closed connection). Possibly consider using a shorter maxLifetime value.
+2024-01-11 17:46:27.423  WARN 15744 --- [https-jsse-nio-5000-exec-3] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.mariadb.jdbc.Connection@49189d0a ((conn=8472) Connection.setNetworkTimeout cannot be called on a closed connection). Possibly consider using a shorter maxLifetime value.
+2024-01-11 17:46:27.425  WARN 15744 --- [https-jsse-nio-5000-exec-3] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.mariadb.jdbc.Connection@24170108 ((conn=8473) Connection.setNetworkTimeout cannot be called on a closed connection). Possibly consider using a shorter maxLifetime value.
+2024-01-11 17:46:27.426  WARN 15744 --- [https-jsse-nio-5000-exec-3] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.mariadb.jdbc.Connection@48d58a3 ((conn=8474) Connection.setNetworkTimeout cannot be called on a closed connection). Possibly consider using a shorter maxLifetime value.
+2024-01-11 17:46:27.427  WARN 15744 --- [https-jsse-nio-5000-exec-3] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.mariadb.jdbc.Connection@7fb07a7c ((conn=8475) Connection.setNetworkTimeout cannot be called on a closed connection). Possibly consider using a shorter maxLifetime value.
+2024-01-11 17:46:27.428  WARN 15744 --- [https-jsse-nio-5000-exec-3] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.mariadb.jdbc.Connection@724d584d ((conn=8476) Connection.setNetworkTimeout cannot be called on a closed connection). Possibly consider using a shorter maxLifetime value.
+2024-01-11 17:46:27.442  WARN 15744 --- [https-jsse-nio-5000-exec-3] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.mariadb.jdbc.Connection@6e4e184d ((conn=8477) Connection.setNetworkTimeout cannot be called on a closed connection). Possibly consider using a shorter maxLifetime value.
+2024-01-11 17:46:27.443  WARN 15744 --- [https-jsse-nio-5000-exec-3] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.mariadb.jdbc.Connection@680d67 ((conn=8478) Connection.setNetworkTimeout cannot be called on a closed connection). Possibly consider using a shorter maxLifetime value.
+2024-01-11 17:46:27.449  INFO 15744 --- [https-jsse-nio-5000-exec-10] k.dbinc.ecos.config.SecurityInterceptor  : Connect Try Charger URI=https://10.10.36.51:5000/v2/SIG00000101, findLevel=2
+2024-01-11 17:46:27.451  INFO 15744 --- [https-jsse-nio-5000-exec-10] k.d.ecos.ocpp.service.SecurityService    : username=SIG00000101, password=costeltest1@3, chargePointId=SIG00000101
+2024-01-11 17:46:27.452  INFO 15744 --- [https-jsse-nio-5000-exec-10] k.d.ecos.ocpp.service.SecurityService    : requestPassword=costeltest1@3, findPassword=costeltest1@3
+2024-01-11 17:46:27.456  INFO 15744 --- [https-jsse-nio-5000-exec-10] k.d.e.w.h.AbstractWebSocketEndpoint      : [SIG00000101] is Connected!
+2024-01-11 17:46:27.528  INFO 15744 --- [https-jsse-nio-5000-exec-3] kr.dbinc.ecos.session.ChargePointStore   : 세션 아이디가 일치하지 않습니다. prev=ab69b528-1e5c-9fb0-7f63-69e480e73c53, cur =7aebe101-bb73-1be9-f28e-fe8bf90bcee2
+2024-01-11 17:46:27.584  INFO 15744 --- [https-jsse-nio-5000-exec-10] k.d.ecos.ocpp.service.MessageLogService  : Charger=SIG00000101, Message=[2, "1", "BootNotification", { "chargeBoxSerialNumber": "02", "chargePointModel": "CEC-2303HC1", "chargePointSerialNumber": "F0:8B:FE:0F:00:00", "chargePointVendor": "COSTEL", "firmwareVersion": "V1.1.7" }]
+2024-01-11 17:46:27.619  INFO 15744 --- [https-jsse-nio-5000-exec-10] k.d.e.o.service.MessageForwardService    : chargerId =COSTEL
+2024-01-11 17:46:27.667  INFO 15744 --- [https-jsse-nio-5000-exec-10] k.d.e.o.service.MessageForwardService    : BootNotification result={"currentTime":"2024-01-11T08:46:27.637+00:00","interval":120,"status":"Accepted"}
+2024-01-11 17:46:27.722  INFO 15744 --- [https-jsse-nio-5000-exec-10] k.d.ecos.ocpp.service.MessageLogService  : Charger=SIG00000101, Message=[3,"1",{"currentTime":"2024-01-11T08:46:27.637Z","interval":120,"status":"Accepted"}]
+2024-01-11 17:46:27.776  INFO 15744 --- [https-jsse-nio-5000-exec-10] k.d.ecos.ocpp.service.MessageLogService  : Charger=SIG00000101, Message=[2,"16","DataTransfer",{
+	"data":	"{\"authAmount\":19987,\"authDate\":\"20230201\",\"authTime\":\"185703\",\"authNo\":\"34053204\",\"transactionNo\":\"230201185437\",\"orgAuthNo\":\"34053204\",\"orgTransactionNo\":\"230201185437\",\"payResult\":1,\"connectorId\":1,\"transactionId\":491}",
+	"messageId":	"PartialCancel",
+	"vendorId":	"VENID"
+}]
+2024-01-11 17:46:27.813  INFO 15744 --- [https-jsse-nio-5000-exec-10] k.d.e.ocpp.service.DataTransferService   : Data Transfer Request Data={"authAmount":19987,"authDate":"20230201","authTime":"185703","authNo":"34053204","transactionNo":"230201185437","orgAuthNo":"34053204","orgTransactionNo":"230201185437","payResult":1,"connectorId":1,"transactionId":491}
+2024-01-11 17:46:27.894  INFO 15744 --- [https-jsse-nio-5000-exec-10] k.d.ecos.ocpp.service.MessageLogService  : Charger=SIG00000101, Message=[3,"16",{"status":"Accepted","data":"{\"status\":\"Rejected\"}"}]
+2024-01-11 17:47:19.271  INFO 15744 --- [https-jsse-nio-5000-exec-1] k.d.e.w.h.AbstractWebSocketEndpoint      : [SIG00000101] is Disconnected!
+2024-01-11 17:47:19.272  INFO 15744 --- [https-jsse-nio-5000-exec-1] k.d.e.w.h.AbstractWebSocketEndpoint      : [SIG00000101] is Disconnected!
+2024-01-11 17:47:19.296  INFO 15744 --- [https-jsse-nio-5000-exec-8] k.dbinc.ecos.config.SecurityInterceptor  : Connect Try Charger URI=https://10.10.36.51:5000/v2/SIG00000101, findLevel=2
+2024-01-11 17:47:19.297  INFO 15744 --- [https-jsse-nio-5000-exec-8] k.d.ecos.ocpp.service.SecurityService    : username=SIG00000101, password=costeltest1@3, chargePointId=SIG00000101
+2024-01-11 17:47:19.298  INFO 15744 --- [https-jsse-nio-5000-exec-8] k.d.ecos.ocpp.service.SecurityService    : requestPassword=costeltest1@3, findPassword=costeltest1@3
+2024-01-11 17:47:19.301  INFO 15744 --- [https-jsse-nio-5000-exec-8] k.d.e.w.h.AbstractWebSocketEndpoint      : [SIG00000101] is Connected!
+2024-01-11 17:47:19.317  INFO 15744 --- [https-jsse-nio-5000-exec-1] kr.dbinc.ecos.session.ChargePointStore   : 세션 아이디가 일치하지 않습니다. prev=0d20724c-9c02-e4a7-aa4c-f7d34effd51e, cur =ab69b528-1e5c-9fb0-7f63-69e480e73c53
+2024-01-11 17:47:19.371  INFO 15744 --- [https-jsse-nio-5000-exec-8] k.d.ecos.ocpp.service.MessageLogService  : Charger=SIG00000101, Message=[2, "1", "BootNotification", { "chargeBoxSerialNumber": "02", "chargePointModel": "CEC-2303HC1", "chargePointSerialNumber": "F0:8B:FE:0F:00:00", "chargePointVendor": "COSTEL", "firmwareVersion": "V1.1.7" }]
+2024-01-11 17:47:19.403  INFO 15744 --- [https-jsse-nio-5000-exec-8] k.d.e.o.service.MessageForwardService    : chargerId =COSTEL
+2024-01-11 17:47:19.450  INFO 15744 --- [https-jsse-nio-5000-exec-8] k.d.e.o.service.MessageForwardService    : BootNotification result={"currentTime":"2024-01-11T08:47:19.415+00:00","interval":120,"status":"Accepted"}
+2024-01-11 17:47:19.506  INFO 15744 --- [https-jsse-nio-5000-exec-8] k.d.ecos.ocpp.service.MessageLogService  : Charger=SIG00000101, Message=[3,"1",{"currentTime":"2024-01-11T08:47:19.415Z","interval":120,"status":"Accepted"}]
+2024-01-11 17:47:19.555  INFO 15744 --- [https-jsse-nio-5000-exec-8] k.d.ecos.ocpp.service.MessageLogService  : Charger=SIG00000101, Message=[2,"16","DataTransfer",{
+	"data":	"{\"authAmount\":19987,\"authDate\":\"20230201\",\"authTime\":\"185703\",\"authNo\":\"34053204\",\"transactionNo\":\"230201185437\",\"orgAuthNo\":\"34053204\",\"orgTransactionNo\":\"230201185437\",\"payResult\":1,\"connectorId\":1,\"transactionId\":491}",
+	"messageId":	"payResult",
+	"vendorId":	"VENID"
+}]
+2024-01-11 17:47:19.582  INFO 15744 --- [https-jsse-nio-5000-exec-8] k.d.e.ocpp.service.DataTransferService   : Data Transfer Request Data={"authAmount":19987,"authDate":"20230201","authTime":"185703","authNo":"34053204","transactionNo":"230201185437","orgAuthNo":"34053204","orgTransactionNo":"230201185437","payResult":1,"connectorId":1,"transactionId":491}
+2024-01-11 17:47:19.591 ERROR 15744 --- [https-jsse-nio-5000-exec-8] k.d.e.w.handler.Ocpp16WebSocketEndpoint  : null
+
+kr.dbinc.ecos.ocpp.rpc.exception.NotSupportedException: null
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403) ~[na:na]
+	at kr.dbinc.ecos.ocpp.service.DataTransferService.dataTransfer(DataTransferService.java:35) ~[main/:na]
+	at kr.dbinc.ecos.ocpp.profile.Ocpp16ServiceImpl.dataTransfer(Ocpp16ServiceImpl.java:134) ~[main/:na]
+	at kr.dbinc.ecos.ocpp.profile.Ocpp16ServiceImpl$$FastClassBySpringCGLIB$$4fcff954.invoke(<generated>) ~[main/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793) ~[spring-aop-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763) ~[spring-aop-5.3.22.jar:5.3.22]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.22.jar:5.3.22]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.22.jar:5.3.22]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763) ~[spring-aop-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708) ~[spring-aop-5.3.22.jar:5.3.22]
+	at kr.dbinc.ecos.ocpp.profile.Ocpp16ServiceImpl$$EnhancerBySpringCGLIB$$e7d247c.dataTransfer(<generated>) ~[main/:na]
+	at kr.dbinc.ecos.ocpp.rpc.MessageHandlerImpl.dispatch(MessageHandlerImpl.java:89) ~[main/:na]
+	at kr.dbinc.ecos.ocpp.rpc.MessageHandlerImpl.handleMessage(MessageHandlerImpl.java:59) ~[main/:na]
+	at kr.dbinc.ecos.ws.handler.Ocpp16WebSocketEndpoint.handleTextMessage(Ocpp16WebSocketEndpoint.java:69) ~[main/:na]
+	at kr.dbinc.ecos.ws.handler.AbstractWebSocketEndpoint.onMessage(AbstractWebSocketEndpoint.java:28) ~[main/:na]
+	at kr.dbinc.ecos.ws.handler.ConcurrentWebSocketHandler.handleMessage(ConcurrentWebSocketHandler.java:31) ~[main/:na]
+	at org.springframework.web.socket.handler.WebSocketHandlerDecorator.handleMessage(WebSocketHandlerDecorator.java:75) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.handler.LoggingWebSocketHandlerDecorator.handleMessage(LoggingWebSocketHandlerDecorator.java:56) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.handler.ExceptionWebSocketHandlerDecorator.handleMessage(ExceptionWebSocketHandlerDecorator.java:58) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter.handleTextMessage(StandardWebSocketHandlerAdapter.java:114) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter.access$000(StandardWebSocketHandlerAdapter.java:43) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:85) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:82) ~[spring-websocket-5.3.22.jar:5.3.22]
+	at org.apache.tomcat.websocket.WsFrameBase.sendMessageText(WsFrameBase.java:415) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsFrameServer.sendMessageText(WsFrameServer.java:129) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.WsFrameBase.processDataText(WsFrameBase.java:515) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.WsFrameBase.processData(WsFrameBase.java:301) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:133) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsFrameServer.onDataAvailable(WsFrameServer.java:85) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsFrameServer.doOnDataAvailable(WsFrameServer.java:183) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsFrameServer.notifyDataAvailable(WsFrameServer.java:162) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.upgradeDispatch(WsHttpUpgradeHandler.java:157) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.coyote.http11.upgrade.UpgradeProcessorInternal.dispatch(UpgradeProcessorInternal.java:60) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:59) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2024-01-11 17:47:19.615  INFO 15744 --- [https-jsse-nio-5000-exec-8] k.d.ecos.ocpp.service.MessageLogService  : Charger=SIG00000101, Message=[4,"16","GenericError",null,"{}"]
+2024-01-11 17:48:57.396  INFO 15744 --- [https-jsse-nio-5000-exec-9] k.d.e.w.h.AbstractWebSocketEndpoint      : [SIG00000101] is Disconnected!
+2024-01-11 17:48:57.397  INFO 15744 --- [https-jsse-nio-5000-exec-9] k.d.e.w.h.AbstractWebSocketEndpoint      : [SIG00000101] is Disconnected!
+2024-01-11 17:48:57.420  INFO 15744 --- [https-jsse-nio-5000-exec-5] k.dbinc.ecos.config.SecurityInterceptor  : Connect Try Charger URI=https://10.10.36.51:5000/v2/SIG00000101, findLevel=2
+2024-01-11 17:48:57.421  INFO 15744 --- [https-jsse-nio-5000-exec-5] k.d.ecos.ocpp.service.SecurityService    : username=SIG00000101, password=costeltest1@3, chargePointId=SIG00000101
+2024-01-11 17:48:57.422  INFO 15744 --- [https-jsse-nio-5000-exec-5] k.d.ecos.ocpp.service.SecurityService    : requestPassword=costeltest1@3, findPassword=costeltest1@3
+2024-01-11 17:48:57.423  INFO 15744 --- [https-jsse-nio-5000-exec-5] k.d.e.w.h.AbstractWebSocketEndpoint      : [SIG00000101] is Connected!
+2024-01-11 17:48:57.452  INFO 15744 --- [https-jsse-nio-5000-exec-9] kr.dbinc.ecos.session.ChargePointStore   : 세션 아이디가 일치하지 않습니다. prev=33474b1c-5d23-e4ce-e3af-596b8394858f, cur =0d20724c-9c02-e4a7-aa4c-f7d34effd51e
+2024-01-11 17:48:57.491  INFO 15744 --- [https-jsse-nio-5000-exec-5] k.d.ecos.ocpp.service.MessageLogService  : Charger=SIG00000101, Message=[2, "1", "BootNotification", { "chargeBoxSerialNumber": "02", "chargePointModel": "CEC-2303HC1", "chargePointSerialNumber": "F0:8B:FE:0F:00:00", "chargePointVendor": "COSTEL", "firmwareVersion": "V1.1.7" }]
+2024-01-11 17:48:57.528  INFO 15744 --- [https-jsse-nio-5000-exec-5] k.d.e.o.service.MessageForwardService    : chargerId =COSTEL
+2024-01-11 17:48:57.587  INFO 15744 --- [https-jsse-nio-5000-exec-5] k.d.e.o.service.MessageForwardService    : BootNotification result={"currentTime":"2024-01-11T08:48:57.545+00:00","interval":120,"status":"Accepted"}
+2024-01-11 17:48:57.650  INFO 15744 --- [https-jsse-nio-5000-exec-5] k.d.ecos.ocpp.service.MessageLogService  : Charger=SIG00000101, Message=[3,"1",{"currentTime":"2024-01-11T08:48:57.545Z","interval":120,"status":"Accepted"}]
+2024-01-11 17:48:57.695  INFO 15744 --- [https-jsse-nio-5000-exec-5] k.d.ecos.ocpp.service.MessageLogService  : Charger=SIG00000101, Message=[2,"16","DataTransfer",{
+	"data":	"{\"authAmount\":19987,\"authDate\":\"20230201\",\"authTime\":\"185703\",\"authNo\":\"34053204\",\"transactionNo\":\"230201185437\",\"orgAuthNo\":\"34053204\",\"orgTransactionNo\":\"230201185437\",\"payResult\":1,\"connectorId\":1,\"transactionId\":491}",
+	"messageId":	"resultPrice",
+	"vendorId":	"VENID"
+}]
+2024-01-11 17:48:57.738  INFO 15744 --- [https-jsse-nio-5000-exec-5] k.d.e.ocpp.service.DataTransferService   : Data Transfer Request Data={"authAmount":19987,"authDate":"20230201","authTime":"185703","authNo":"34053204","transactionNo":"230201185437","orgAuthNo":"34053204","orgTransactionNo":"230201185437","payResult":1,"connectorId":1,"transactionId":491}
+2024-01-11 17:48:57.873  INFO 15744 --- [https-jsse-nio-5000-exec-5] k.d.ecos.ocpp.service.MessageLogService  : Charger=SIG00000101, Message=[3,"16",{"status":"Accepted","data":"{\"connectorId\":0,\"resultPrice\":0.0}"}]
+2024-01-11 18:19:06.877  WARN 15744 --- [Task-scheduler10] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.mariadb.jdbc.Connection@77b08e48 ((conn=8510) Connection.setNetworkTimeout cannot be called on a closed connection). Possibly consider using a shorter maxLifetime value.
+2024-01-11 18:19:06.882  WARN 15744 --- [Task-scheduler10] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.mariadb.jdbc.Connection@7d48e538 ((conn=8511) Connection.setNetworkTimeout cannot be called on a closed connection). Possibly consider using a shorter maxLifetime value.
+2024-01-11 18:19:06.884  WARN 15744 --- [Task-scheduler10] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.mariadb.jdbc.Connection@384a64f5 ((conn=8512) Connection.setNetworkTimeout cannot be called on a closed connection). Possibly consider using a shorter maxLifetime value.
+2024-01-11 18:19:06.885  WARN 15744 --- [Task-scheduler10] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.mariadb.jdbc.Connection@4bfb6f7a ((conn=8513) Connection.setNetworkTimeout cannot be called on a closed connection). Possibly consider using a shorter maxLifetime value.
+2024-01-11 18:19:06.886  WARN 15744 --- [Task-scheduler10] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.mariadb.jdbc.Connection@93879d5 ((conn=8514) Connection.setNetworkTimeout cannot be called on a closed connection). Possibly consider using a shorter maxLifetime value.
+2024-01-11 18:19:06.887  WARN 15744 --- [Task-scheduler10] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.mariadb.jdbc.Connection@33632cef ((conn=8515) Connection.setNetworkTimeout cannot be called on a closed connection). Possibly consider using a shorter maxLifetime value.
+2024-01-11 18:19:06.937  INFO 15744 --- [Task-scheduler10] k.d.e.w.h.AbstractWebSocketEndpoint      : [SIG00000101] is Disconnected!

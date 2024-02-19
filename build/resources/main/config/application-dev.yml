@@ -1,0 +1,48 @@
+
+spring:
+  application:
+    name: OCPP1.6 ECOS SERVER
+
+  datasource:
+    #url: jdbc:mariadb://10.52.2.220:3306/nice
+    url: jdbc:mariadb://211.251.238.111:3306/blue_networks     #bluenetworks(dev)
+    username: blue_networks
+    password: blue_networks
+    driver-class-name: org.mariadb.jdbc.Driver
+
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: none
+      naming:
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    properties:
+      hibernate:
+#                show_sql: true
+        format_sql: true
+    database-platform: org.hibernate.dialect.MariaDB103Dialect
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "prometheus"
+  metrics:
+    tags:
+      application: ${spring.application.name}
+
+
+#logging.level:
+#  org.hibernate.SQL: debug
+#  org.hibernate.type : trace
+
+server:
+  port: 5000
+  ssl:
+    enabled: true
+    key-alias: ecos
+    key-store: ecos.p12
+    key-store-type: PKCS12
+    key-store-password: ecos

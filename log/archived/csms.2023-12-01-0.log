@@ -1,0 +1,62 @@
+2023-12-01 12:59:55.557  INFO 26020 --- [main] kr.dbinc.ecos.OcppForJavaApplication     : Starting OcppForJavaApplication using Java 17.0.7 on DESKTOP-OBR6GFG with PID 26020 (D:\StsWorkspace\ecos-ocpp-server\bin\main started by Jerad in D:\StsWorkspace\ecos-ocpp-server)
+2023-12-01 12:59:55.562  INFO 26020 --- [main] kr.dbinc.ecos.OcppForJavaApplication     : No active profile set, falling back to 1 default profile: "default"
+2023-12-01 12:59:57.039  INFO 26020 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-01 12:59:57.470  INFO 26020 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 418 ms. Found 23 JPA repository interfaces.
+2023-12-01 12:59:58.108  INFO 26020 --- [main] kr.dbinc.ecos.config.ConnectorConfig     : HTTP port setup to 9999
+2023-12-01 12:59:58.396  INFO 26020 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 5000 (https) 9999 (http)
+2023-12-01 12:59:58.416  INFO 26020 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-01 12:59:58.417  INFO 26020 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-12-01 12:59:58.605  INFO 26020 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-01 12:59:58.605  INFO 26020 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2961 ms
+2023-12-01 12:59:59.106  INFO 26020 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-01 12:59:59.210  INFO 26020 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2023-12-01 12:59:59.533  INFO 26020 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-12-01 12:59:59.701  INFO 26020 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-01 12:59:59.838  INFO 26020 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-01 12:59:59.872  INFO 26020 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2023-12-01 13:00:00.294  WARN 26020 --- [main] org.hibernate.cfg.AnnotationBinder       : HHH000457: Joined inheritance hierarchy [kr.dbinc.ecos.domain.member.Authorization] defined explicit @DiscriminatorColumn.  Legacy Hibernate behavior was to ignore the @DiscriminatorColumn.  However, as part of issue HHH-6911 we now apply the explicit @DiscriminatorColumn.  If you would prefer the legacy behavior, enable the `hibernate.discriminator.ignore_explicit_for_joined` setting (hibernate.discriminator.ignore_explicit_for_joined=true)
+2023-12-01 13:00:01.123  INFO 26020 --- [main] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: kr.dbinc.ecos.domain.security.SecurityLog (class must be instantiated by Interceptor)
+2023-12-01 13:00:01.427  INFO 26020 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-01 13:00:01.446  INFO 26020 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-01 13:00:03.232  INFO 26020 --- [main] org.reflections.Reflections              : Reflections took 271 ms to scan 1 urls, producing 70 keys and 403 values
+2023-12-01 13:00:03.398  INFO 26020 --- [main] org.reflections.Reflections              : Reflections took 136 ms to scan 1 urls, producing 70 keys and 403 values
+2023-12-01 13:00:03.524  INFO 26020 --- [main] org.reflections.Reflections              : Reflections took 123 ms to scan 1 urls, producing 70 keys and 403 values
+2023-12-01 13:00:03.618  INFO 26020 --- [main] kr.dbinc.ecos.config.SchedulerConfig     : datSource=HikariDataSource (HikariPool-1)
+2023-12-01 13:00:04.166  INFO 26020 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-12-01 13:00:05.635  INFO 26020 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-12-01 13:00:06.106  INFO 26020 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 5000 (https) 9999 (http) with context path ''
+2023-12-01 13:00:06.123  INFO 26020 --- [main] kr.dbinc.ecos.OcppForJavaApplication     : Started OcppForJavaApplication in 11.154 seconds (JVM running for 12.2)
+2023-12-01 13:00:07.637  INFO 26020 --- [RMI TCP Connection(1)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-01 13:00:07.638  INFO 26020 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-12-01 13:00:07.640  INFO 26020 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-12-01 16:06:04.318  INFO 24208 --- [main] kr.dbinc.ecos.OcppForJavaApplication     : Starting OcppForJavaApplication using Java 17.0.7 on DESKTOP-OBR6GFG with PID 24208 (D:\StsWorkspace\ecos-ocpp-server\bin\main started by Jerad in D:\StsWorkspace\ecos-ocpp-server)
+2023-12-01 16:06:04.322  INFO 24208 --- [main] kr.dbinc.ecos.OcppForJavaApplication     : No active profile set, falling back to 1 default profile: "default"
+2023-12-01 16:06:05.914  INFO 24208 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-01 16:06:06.294  INFO 24208 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 371 ms. Found 23 JPA repository interfaces.
+2023-12-01 16:06:06.826  INFO 24208 --- [main] kr.dbinc.ecos.config.ConnectorConfig     : HTTP port setup to 9999
+2023-12-01 16:06:07.090  INFO 24208 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 5000 (https) 9999 (http)
+2023-12-01 16:06:07.117  INFO 24208 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-01 16:06:07.123  INFO 24208 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-12-01 16:06:07.390  INFO 24208 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-01 16:06:07.391  INFO 24208 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2984 ms
+2023-12-01 16:06:08.113  INFO 24208 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-01 16:06:08.288  INFO 24208 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2023-12-01 16:06:08.549  INFO 24208 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-12-01 16:06:08.733  INFO 24208 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-01 16:06:08.878  INFO 24208 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-01 16:06:08.909  INFO 24208 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2023-12-01 16:06:09.152  WARN 24208 --- [main] org.hibernate.cfg.AnnotationBinder       : HHH000457: Joined inheritance hierarchy [kr.dbinc.ecos.domain.member.Authorization] defined explicit @DiscriminatorColumn.  Legacy Hibernate behavior was to ignore the @DiscriminatorColumn.  However, as part of issue HHH-6911 we now apply the explicit @DiscriminatorColumn.  If you would prefer the legacy behavior, enable the `hibernate.discriminator.ignore_explicit_for_joined` setting (hibernate.discriminator.ignore_explicit_for_joined=true)
+2023-12-01 16:06:09.820  INFO 24208 --- [main] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: kr.dbinc.ecos.domain.security.SecurityLog (class must be instantiated by Interceptor)
+2023-12-01 16:06:10.025  INFO 24208 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-01 16:06:10.041  INFO 24208 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-01 16:06:11.590  INFO 24208 --- [main] org.reflections.Reflections              : Reflections took 204 ms to scan 1 urls, producing 70 keys and 403 values
+2023-12-01 16:06:11.738  INFO 24208 --- [main] org.reflections.Reflections              : Reflections took 128 ms to scan 1 urls, producing 70 keys and 403 values
+2023-12-01 16:06:11.863  INFO 24208 --- [main] org.reflections.Reflections              : Reflections took 122 ms to scan 1 urls, producing 70 keys and 403 values
+2023-12-01 16:06:11.950  INFO 24208 --- [main] kr.dbinc.ecos.config.SchedulerConfig     : datSource=HikariDataSource (HikariPool-1)
+2023-12-01 16:06:12.367  INFO 24208 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-12-01 16:06:13.882  INFO 24208 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-12-01 16:06:14.293  INFO 24208 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 5000 (https) 9999 (http) with context path ''
+2023-12-01 16:06:14.317  INFO 24208 --- [main] kr.dbinc.ecos.OcppForJavaApplication     : Started OcppForJavaApplication in 10.5 seconds (JVM running for 11.461)
+2023-12-01 16:06:16.274  INFO 24208 --- [RMI TCP Connection(1)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-01 16:06:16.275  INFO 24208 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-12-01 16:06:16.278  INFO 24208 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms

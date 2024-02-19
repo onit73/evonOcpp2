@@ -1,0 +1,28 @@
+{
+  "groups": [
+    {
+      "name": "ecos",
+      "type": "kr.dbinc.evon.config.CommonProperty",
+      "sourceType": "kr.dbinc.evon.config.CommonProperty"
+    }
+  ],
+  "properties": [
+    {
+      "name": "ecos.api-server",
+      "type": "java.lang.String",
+      "sourceType": "kr.dbinc.evon.config.CommonProperty"
+    },
+    {
+      "name": "ecos.server-ip",
+      "type": "java.lang.String",
+      "sourceType": "kr.dbinc.evon.config.CommonProperty"
+    },
+    {
+      "name": "ecos.server-port",
+      "type": "java.lang.Integer",
+      "sourceType": "kr.dbinc.evon.config.CommonProperty",
+      "defaultValue": 0
+    }
+  ],
+  "hints": []
+}
