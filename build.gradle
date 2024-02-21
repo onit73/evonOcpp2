@@ -75,7 +75,7 @@ sourceSets {
 }
 compileQuerydsl{
 	options.compilerArgs = [
-			"-Aquerydsl.excludedPackages=kr.dbinc.ecos.ocpp.types.dto,kr.dbinc.ecos.ocpp.operations"
+			"-Aquerydsl.excludedPackages=kr.dbinc.evon.ocpp.types.dto,kr.dbinc.evon.ocpp.operations"
 	]
 	options.annotationProcessorPath = configurations.querydsl
 

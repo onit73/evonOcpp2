@@ -1,7 +1,7 @@
 
 spring:
   application:
-    name: OCPP1.6 ECOS SERVER
+    name: OCPP1.6 EVON SERVER
 
   datasource:
     #url: jdbc:mariadb://10.0.1.142:3306/nice?allowMultiQueries=true
@@ -45,7 +45,7 @@ server:
   # additionalPorts: 8081, 8082
   ssl:
     enabled: true
-    key-alias: ecos
-    key-store: ecos.p12
+    key-alias: evon
+    key-store: evon.p12
     key-store-type: PKCS12
-    key-store-password: ecos
+    key-store-password: evon

@@ -1,9 +1,9 @@
 {
   "groups": [
     {
-      "name": "ecos",
-      "type": "kr.dbinc.evon.config.CommonProperty",
-      "sourceType": "kr.dbinc.evon.config.CommonProperty"
+      "name": "evon",
+      "type": "kr.onit.evon.config.CommonProperty",
+      "sourceType": "kr.onit.evon.config.CommonProperty"
     }
   ],
   "properties": [
